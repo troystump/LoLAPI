@@ -84,11 +84,11 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Code/", "**/*.{h,m}"
+  s.source_files  = "LoLAPI/Code/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Code/"
-  s.header_mappings_dir = "Code"
+  # s.public_header_files = "LoLAPI/Code"
+  s.header_mappings_dir = "LoLAPI/Code"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
