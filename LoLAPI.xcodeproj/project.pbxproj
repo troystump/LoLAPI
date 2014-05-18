@@ -1,0 +1,1081 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28C9DC99342F458389B969C3 /* libPods-LoLAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3301CCC4FD947CCBEEE4689 /* libPods-LoLAPI.a */; };
+		682BD9E0192865630033DE15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BD9DF192865630033DE15 /* Foundation.framework */; };
+		682BD9EE192865630033DE15 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BD9ED192865630033DE15 /* XCTest.framework */; };
+		682BD9EF192865630033DE15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BD9DF192865630033DE15 /* Foundation.framework */; };
+		682BD9F1192865630033DE15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BD9F0192865630033DE15 /* UIKit.framework */; };
+		682BD9F4192865630033DE15 /* libLoLAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BD9DC192865630033DE15 /* libLoLAPI.a */; };
+		682BD9FA192865630033DE15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 682BD9F8192865630033DE15 /* InfoPlist.strings */; };
+		682BD9FC192865630033DE15 /* LoLAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 682BD9FB192865630033DE15 /* LoLAPITests.m */; };
+		68B512691928679E00AF00CB /* LoLChampion.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511B71928679E00AF00CB /* LoLChampion.m */; };
+		68B5126A1928679E00AF00CB /* LoLChampionList.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511B91928679E00AF00CB /* LoLChampionList.m */; };
+		68B5126B1928679E00AF00CB /* LoLChampionAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511BB1928679E00AF00CB /* LoLChampionAPI.m */; };
+		68B5126C1928679E00AF00CB /* LoLGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511C01928679E00AF00CB /* LoLGame.m */; };
+		68B5126D1928679E00AF00CB /* LoLPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511C21928679E00AF00CB /* LoLPlayer.m */; };
+		68B5126E1928679E00AF00CB /* LoLRawGameStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511C41928679E00AF00CB /* LoLRawGameStats.m */; };
+		68B5126F1928679E00AF00CB /* LoLRecentGames.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511C61928679E00AF00CB /* LoLRecentGames.m */; };
+		68B512701928679E00AF00CB /* LoLGameAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511C81928679E00AF00CB /* LoLGameAPI.m */; };
+		68B512711928679E00AF00CB /* LoLLeague.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511CD1928679E00AF00CB /* LoLLeague.m */; };
+		68B512721928679E00AF00CB /* LoLLeagueEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511CF1928679E00AF00CB /* LoLLeagueEntry.m */; };
+		68B512731928679E00AF00CB /* LoLMiniSeries.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511D11928679E00AF00CB /* LoLMiniSeries.m */; };
+		68B512741928679E00AF00CB /* LoLLeagueAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511D31928679E00AF00CB /* LoLLeagueAPI.m */; };
+		68B512751928679E00AF00CB /* LoLAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511D71928679E00AF00CB /* LoLAPIManager.m */; };
+		68B512761928679E00AF00CB /* LoLBaseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511DB1928679E00AF00CB /* LoLBaseDTO.m */; };
+		68B512771928679E00AF00CB /* LoLAPIConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511DF1928679E00AF00CB /* LoLAPIConfig.m */; };
+		68B512781928679E00AF00CB /* LoLBaseAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511E11928679E00AF00CB /* LoLBaseAPI.m */; };
+		68B512791928679E00AF00CB /* LoLChallengerTierLeagueHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511E31928679E00AF00CB /* LoLChallengerTierLeagueHelper.m */; };
+		68B5127A1928679E00AF00CB /* LoLRegionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511E51928679E00AF00CB /* LoLRegionHelper.m */; };
+		68B5127B1928679E00AF00CB /* LoLRegionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511E81928679E00AF00CB /* LoLRegionInfo.m */; };
+		68B5127C1928679E00AF00CB /* LoLSeasonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511EA1928679E00AF00CB /* LoLSeasonHelper.m */; };
+		68B5127D1928679E00AF00CB /* LoLVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511EC1928679E00AF00CB /* LoLVersion.m */; };
+		68B5127E1928679E00AF00CB /* LoLStaticBasicData.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511F01928679E00AF00CB /* LoLStaticBasicData.m */; };
+		68B5127F1928679E00AF00CB /* LoLStaticBasicDataStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511F21928679E00AF00CB /* LoLStaticBasicDataStats.m */; };
+		68B512801928679E00AF00CB /* LoLStaticBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511F41928679E00AF00CB /* LoLStaticBlock.m */; };
+		68B512811928679E00AF00CB /* LoLStaticBlockItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511F61928679E00AF00CB /* LoLStaticBlockItem.m */; };
+		68B512821928679E00AF00CB /* LoLStaticChampion.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511F81928679E00AF00CB /* LoLStaticChampion.m */; };
+		68B512831928679E00AF00CB /* LoLStaticChampionList.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511FA1928679E00AF00CB /* LoLStaticChampionList.m */; };
+		68B512841928679E00AF00CB /* LoLStaticChampionSpell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511FC1928679E00AF00CB /* LoLStaticChampionSpell.m */; };
+		68B512851928679E00AF00CB /* LoLStaticGold.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B511FE1928679E00AF00CB /* LoLStaticGold.m */; };
+		68B512861928679E00AF00CB /* LoLStaticGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512001928679E00AF00CB /* LoLStaticGroup.m */; };
+		68B512871928679E00AF00CB /* LoLStaticImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512021928679E00AF00CB /* LoLStaticImage.m */; };
+		68B512881928679E00AF00CB /* LoLStaticInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512041928679E00AF00CB /* LoLStaticInfo.m */; };
+		68B512891928679E00AF00CB /* LoLStaticItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512061928679E00AF00CB /* LoLStaticItem.m */; };
+		68B5128A1928679E00AF00CB /* LoLStaticItemList.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512081928679E00AF00CB /* LoLStaticItemList.m */; };
+		68B5128B1928679E00AF00CB /* LoLStaticItemTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5120A1928679E00AF00CB /* LoLStaticItemTree.m */; };
+		68B5128C1928679E00AF00CB /* LoLStaticLevelTip.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5120C1928679E00AF00CB /* LoLStaticLevelTip.m */; };
+		68B5128D1928679E00AF00CB /* LoLStaticMastery.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5120E1928679E00AF00CB /* LoLStaticMastery.m */; };
+		68B5128E1928679E00AF00CB /* LoLStaticMasteryList.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512101928679E00AF00CB /* LoLStaticMasteryList.m */; };
+		68B5128F1928679E00AF00CB /* LoLStaticMasteryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512121928679E00AF00CB /* LoLStaticMasteryTree.m */; };
+		68B512901928679E00AF00CB /* LoLStaticMasteryTreeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512141928679E00AF00CB /* LoLStaticMasteryTreeItem.m */; };
+		68B512911928679E00AF00CB /* LoLStaticMasteryTreeList.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512161928679E00AF00CB /* LoLStaticMasteryTreeList.m */; };
+		68B512921928679E00AF00CB /* LoLStaticMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512181928679E00AF00CB /* LoLStaticMetaData.m */; };
+		68B512931928679E00AF00CB /* LoLStaticPassive.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5121A1928679E00AF00CB /* LoLStaticPassive.m */; };
+		68B512941928679E00AF00CB /* LoLStaticRealm.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5121C1928679E00AF00CB /* LoLStaticRealm.m */; };
+		68B512951928679E00AF00CB /* LoLStaticRecommended.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5121E1928679E00AF00CB /* LoLStaticRecommended.m */; };
+		68B512961928679E00AF00CB /* LoLStaticRune.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512201928679E00AF00CB /* LoLStaticRune.m */; };
+		68B512971928679E00AF00CB /* LoLStaticRuneList.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512221928679E00AF00CB /* LoLStaticRuneList.m */; };
+		68B512981928679E00AF00CB /* LoLStaticSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512241928679E00AF00CB /* LoLStaticSkin.m */; };
+		68B512991928679E00AF00CB /* LoLStaticSpellVariables.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512261928679E00AF00CB /* LoLStaticSpellVariables.m */; };
+		68B5129A1928679E00AF00CB /* LoLStaticStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512281928679E00AF00CB /* LoLStaticStats.m */; };
+		68B5129B1928679E00AF00CB /* LoLStaticSummonerSpell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5122A1928679E00AF00CB /* LoLStaticSummonerSpell.m */; };
+		68B5129C1928679E00AF00CB /* LoLStaticSummonerSpellList.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5122C1928679E00AF00CB /* LoLStaticSummonerSpellList.m */; };
+		68B5129D1928679E00AF00CB /* LoLStaticDataAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5122E1928679E00AF00CB /* LoLStaticDataAPI.m */; };
+		68B5129E1928679E00AF00CB /* LoLAggregatedStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512331928679E00AF00CB /* LoLAggregatedStats.m */; };
+		68B5129F1928679E00AF00CB /* LoLChampionStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512351928679E00AF00CB /* LoLChampionStats.m */; };
+		68B512A01928679E00AF00CB /* LoLPlayerStatsSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512371928679E00AF00CB /* LoLPlayerStatsSummary.m */; };
+		68B512A11928679E00AF00CB /* LoLPlayerStatsSummaryList.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512391928679E00AF00CB /* LoLPlayerStatsSummaryList.m */; };
+		68B512A21928679E00AF00CB /* LoLRankedStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5123B1928679E00AF00CB /* LoLRankedStats.m */; };
+		68B512A31928679E00AF00CB /* LoLStatsAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5123D1928679E00AF00CB /* LoLStatsAPI.m */; };
+		68B512A41928679E00AF00CB /* LoLMastery.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512421928679E00AF00CB /* LoLMastery.m */; };
+		68B512A51928679E00AF00CB /* LoLMasteryPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512441928679E00AF00CB /* LoLMasteryPage.m */; };
+		68B512A61928679E00AF00CB /* LoLMasteryPages.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512461928679E00AF00CB /* LoLMasteryPages.m */; };
+		68B512A71928679E00AF00CB /* LoLRunePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512481928679E00AF00CB /* LoLRunePage.m */; };
+		68B512A81928679E00AF00CB /* LoLRunePages.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5124A1928679E00AF00CB /* LoLRunePages.m */; };
+		68B512A91928679E00AF00CB /* LoLRuneSlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5124C1928679E00AF00CB /* LoLRuneSlot.m */; };
+		68B512AA1928679E00AF00CB /* LoLSummoner.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5124E1928679E00AF00CB /* LoLSummoner.m */; };
+		68B512AB1928679E00AF00CB /* LoLSummonerAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512501928679E00AF00CB /* LoLSummonerAPI.m */; };
+		68B512AC1928679E00AF00CB /* LoLMatchHistorySummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512581928679E00AF00CB /* LoLMatchHistorySummary.m */; };
+		68B512AD1928679E00AF00CB /* LoLMessageOfDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5125A1928679E00AF00CB /* LoLMessageOfDay.m */; };
+		68B512AE1928679E00AF00CB /* LoLRoster.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5125C1928679E00AF00CB /* LoLRoster.m */; };
+		68B512AF1928679E00AF00CB /* LoLTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5125E1928679E00AF00CB /* LoLTeam.m */; };
+		68B512B01928679E00AF00CB /* LoLTeamMemberInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512601928679E00AF00CB /* LoLTeamMemberInfo.m */; };
+		68B512B11928679E00AF00CB /* LoLTeamStatDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512621928679E00AF00CB /* LoLTeamStatDetail.m */; };
+		68B512B21928679E00AF00CB /* LoLTeamStatSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512641928679E00AF00CB /* LoLTeamStatSummary.m */; };
+		68B512B31928679E00AF00CB /* LoLTeamAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B512661928679E00AF00CB /* LoLTeamAPI.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		682BD9F2192865630033DE15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 682BD9D4192865630033DE15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 682BD9DB192865630033DE15;
+			remoteInfo = LoLAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		682BD9DA192865630033DE15 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		682BD9DC192865630033DE15 /* libLoLAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLoLAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		682BD9DF192865630033DE15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		682BD9EC192865630033DE15 /* LoLAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoLAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		682BD9ED192865630033DE15 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		682BD9F0192865630033DE15 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		682BD9F7192865630033DE15 /* LoLAPITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoLAPITests-Info.plist"; sourceTree = "<group>"; };
+		682BD9F9192865630033DE15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		682BD9FB192865630033DE15 /* LoLAPITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoLAPITests.m; sourceTree = "<group>"; };
+		68B511B61928679E00AF00CB /* LoLChampion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLChampion.h; sourceTree = "<group>"; };
+		68B511B71928679E00AF00CB /* LoLChampion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLChampion.m; sourceTree = "<group>"; };
+		68B511B81928679E00AF00CB /* LoLChampionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLChampionList.h; sourceTree = "<group>"; };
+		68B511B91928679E00AF00CB /* LoLChampionList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLChampionList.m; sourceTree = "<group>"; };
+		68B511BA1928679E00AF00CB /* LoLChampionAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLChampionAPI.h; sourceTree = "<group>"; };
+		68B511BB1928679E00AF00CB /* LoLChampionAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLChampionAPI.m; sourceTree = "<group>"; };
+		68B511BC1928679E00AF00CB /* Champion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Champion.h; sourceTree = "<group>"; };
+		68B511BF1928679E00AF00CB /* LoLGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLGame.h; sourceTree = "<group>"; };
+		68B511C01928679E00AF00CB /* LoLGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLGame.m; sourceTree = "<group>"; };
+		68B511C11928679E00AF00CB /* LoLPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLPlayer.h; sourceTree = "<group>"; };
+		68B511C21928679E00AF00CB /* LoLPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLPlayer.m; sourceTree = "<group>"; };
+		68B511C31928679E00AF00CB /* LoLRawGameStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLRawGameStats.h; sourceTree = "<group>"; };
+		68B511C41928679E00AF00CB /* LoLRawGameStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLRawGameStats.m; sourceTree = "<group>"; };
+		68B511C51928679E00AF00CB /* LoLRecentGames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLRecentGames.h; sourceTree = "<group>"; };
+		68B511C61928679E00AF00CB /* LoLRecentGames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLRecentGames.m; sourceTree = "<group>"; };
+		68B511C71928679E00AF00CB /* LoLGameAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLGameAPI.h; sourceTree = "<group>"; };
+		68B511C81928679E00AF00CB /* LoLGameAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLGameAPI.m; sourceTree = "<group>"; };
+		68B511C91928679E00AF00CB /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		68B511CC1928679E00AF00CB /* LoLLeague.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLLeague.h; sourceTree = "<group>"; };
+		68B511CD1928679E00AF00CB /* LoLLeague.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLLeague.m; sourceTree = "<group>"; };
+		68B511CE1928679E00AF00CB /* LoLLeagueEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLLeagueEntry.h; sourceTree = "<group>"; };
+		68B511CF1928679E00AF00CB /* LoLLeagueEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLLeagueEntry.m; sourceTree = "<group>"; };
+		68B511D01928679E00AF00CB /* LoLMiniSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLMiniSeries.h; sourceTree = "<group>"; };
+		68B511D11928679E00AF00CB /* LoLMiniSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLMiniSeries.m; sourceTree = "<group>"; };
+		68B511D21928679E00AF00CB /* LoLLeagueAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLLeagueAPI.h; sourceTree = "<group>"; };
+		68B511D31928679E00AF00CB /* LoLLeagueAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLLeagueAPI.m; sourceTree = "<group>"; };
+		68B511D41928679E00AF00CB /* League.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = League.h; sourceTree = "<group>"; };
+		68B511D51928679E00AF00CB /* LoLAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLAPI.h; sourceTree = "<group>"; };
+		68B511D61928679E00AF00CB /* LoLAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLAPIManager.h; sourceTree = "<group>"; };
+		68B511D71928679E00AF00CB /* LoLAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLAPIManager.m; sourceTree = "<group>"; };
+		68B511DA1928679E00AF00CB /* LoLBaseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLBaseDTO.h; sourceTree = "<group>"; };
+		68B511DB1928679E00AF00CB /* LoLBaseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLBaseDTO.m; sourceTree = "<group>"; };
+		68B511DD1928679E00AF00CB /* LoLBaseAPIPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLBaseAPIPrivate.h; sourceTree = "<group>"; };
+		68B511DE1928679E00AF00CB /* LoLAPIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLAPIConfig.h; sourceTree = "<group>"; };
+		68B511DF1928679E00AF00CB /* LoLAPIConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLAPIConfig.m; sourceTree = "<group>"; };
+		68B511E01928679E00AF00CB /* LoLBaseAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLBaseAPI.h; sourceTree = "<group>"; };
+		68B511E11928679E00AF00CB /* LoLBaseAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLBaseAPI.m; sourceTree = "<group>"; };
+		68B511E21928679E00AF00CB /* LoLChallengerTierLeagueHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLChallengerTierLeagueHelper.h; sourceTree = "<group>"; };
+		68B511E31928679E00AF00CB /* LoLChallengerTierLeagueHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLChallengerTierLeagueHelper.m; sourceTree = "<group>"; };
+		68B511E41928679E00AF00CB /* LoLRegionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLRegionHelper.h; sourceTree = "<group>"; };
+		68B511E51928679E00AF00CB /* LoLRegionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLRegionHelper.m; sourceTree = "<group>"; };
+		68B511E61928679E00AF00CB /* LoLRegionIDEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLRegionIDEnum.h; sourceTree = "<group>"; };
+		68B511E71928679E00AF00CB /* LoLRegionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLRegionInfo.h; sourceTree = "<group>"; };
+		68B511E81928679E00AF00CB /* LoLRegionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLRegionInfo.m; sourceTree = "<group>"; };
+		68B511E91928679E00AF00CB /* LoLSeasonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLSeasonHelper.h; sourceTree = "<group>"; };
+		68B511EA1928679E00AF00CB /* LoLSeasonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLSeasonHelper.m; sourceTree = "<group>"; };
+		68B511EB1928679E00AF00CB /* LoLVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLVersion.h; sourceTree = "<group>"; };
+		68B511EC1928679E00AF00CB /* LoLVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLVersion.m; sourceTree = "<group>"; };
+		68B511EF1928679E00AF00CB /* LoLStaticBasicData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticBasicData.h; sourceTree = "<group>"; };
+		68B511F01928679E00AF00CB /* LoLStaticBasicData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticBasicData.m; sourceTree = "<group>"; };
+		68B511F11928679E00AF00CB /* LoLStaticBasicDataStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticBasicDataStats.h; sourceTree = "<group>"; };
+		68B511F21928679E00AF00CB /* LoLStaticBasicDataStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticBasicDataStats.m; sourceTree = "<group>"; };
+		68B511F31928679E00AF00CB /* LoLStaticBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticBlock.h; sourceTree = "<group>"; };
+		68B511F41928679E00AF00CB /* LoLStaticBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticBlock.m; sourceTree = "<group>"; };
+		68B511F51928679E00AF00CB /* LoLStaticBlockItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticBlockItem.h; sourceTree = "<group>"; };
+		68B511F61928679E00AF00CB /* LoLStaticBlockItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticBlockItem.m; sourceTree = "<group>"; };
+		68B511F71928679E00AF00CB /* LoLStaticChampion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticChampion.h; sourceTree = "<group>"; };
+		68B511F81928679E00AF00CB /* LoLStaticChampion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticChampion.m; sourceTree = "<group>"; };
+		68B511F91928679E00AF00CB /* LoLStaticChampionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticChampionList.h; sourceTree = "<group>"; };
+		68B511FA1928679E00AF00CB /* LoLStaticChampionList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticChampionList.m; sourceTree = "<group>"; };
+		68B511FB1928679E00AF00CB /* LoLStaticChampionSpell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticChampionSpell.h; sourceTree = "<group>"; };
+		68B511FC1928679E00AF00CB /* LoLStaticChampionSpell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticChampionSpell.m; sourceTree = "<group>"; };
+		68B511FD1928679E00AF00CB /* LoLStaticGold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticGold.h; sourceTree = "<group>"; };
+		68B511FE1928679E00AF00CB /* LoLStaticGold.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticGold.m; sourceTree = "<group>"; };
+		68B511FF1928679E00AF00CB /* LoLStaticGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticGroup.h; sourceTree = "<group>"; };
+		68B512001928679E00AF00CB /* LoLStaticGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticGroup.m; sourceTree = "<group>"; };
+		68B512011928679E00AF00CB /* LoLStaticImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticImage.h; sourceTree = "<group>"; };
+		68B512021928679E00AF00CB /* LoLStaticImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticImage.m; sourceTree = "<group>"; };
+		68B512031928679E00AF00CB /* LoLStaticInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticInfo.h; sourceTree = "<group>"; };
+		68B512041928679E00AF00CB /* LoLStaticInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticInfo.m; sourceTree = "<group>"; };
+		68B512051928679E00AF00CB /* LoLStaticItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticItem.h; sourceTree = "<group>"; };
+		68B512061928679E00AF00CB /* LoLStaticItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticItem.m; sourceTree = "<group>"; };
+		68B512071928679E00AF00CB /* LoLStaticItemList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticItemList.h; sourceTree = "<group>"; };
+		68B512081928679E00AF00CB /* LoLStaticItemList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticItemList.m; sourceTree = "<group>"; };
+		68B512091928679E00AF00CB /* LoLStaticItemTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticItemTree.h; sourceTree = "<group>"; };
+		68B5120A1928679E00AF00CB /* LoLStaticItemTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticItemTree.m; sourceTree = "<group>"; };
+		68B5120B1928679E00AF00CB /* LoLStaticLevelTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticLevelTip.h; sourceTree = "<group>"; };
+		68B5120C1928679E00AF00CB /* LoLStaticLevelTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticLevelTip.m; sourceTree = "<group>"; };
+		68B5120D1928679E00AF00CB /* LoLStaticMastery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticMastery.h; sourceTree = "<group>"; };
+		68B5120E1928679E00AF00CB /* LoLStaticMastery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticMastery.m; sourceTree = "<group>"; };
+		68B5120F1928679E00AF00CB /* LoLStaticMasteryList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticMasteryList.h; sourceTree = "<group>"; };
+		68B512101928679E00AF00CB /* LoLStaticMasteryList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticMasteryList.m; sourceTree = "<group>"; };
+		68B512111928679E00AF00CB /* LoLStaticMasteryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticMasteryTree.h; sourceTree = "<group>"; };
+		68B512121928679E00AF00CB /* LoLStaticMasteryTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticMasteryTree.m; sourceTree = "<group>"; };
+		68B512131928679E00AF00CB /* LoLStaticMasteryTreeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticMasteryTreeItem.h; sourceTree = "<group>"; };
+		68B512141928679E00AF00CB /* LoLStaticMasteryTreeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticMasteryTreeItem.m; sourceTree = "<group>"; };
+		68B512151928679E00AF00CB /* LoLStaticMasteryTreeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticMasteryTreeList.h; sourceTree = "<group>"; };
+		68B512161928679E00AF00CB /* LoLStaticMasteryTreeList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticMasteryTreeList.m; sourceTree = "<group>"; };
+		68B512171928679E00AF00CB /* LoLStaticMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticMetaData.h; sourceTree = "<group>"; };
+		68B512181928679E00AF00CB /* LoLStaticMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticMetaData.m; sourceTree = "<group>"; };
+		68B512191928679E00AF00CB /* LoLStaticPassive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticPassive.h; sourceTree = "<group>"; };
+		68B5121A1928679E00AF00CB /* LoLStaticPassive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticPassive.m; sourceTree = "<group>"; };
+		68B5121B1928679E00AF00CB /* LoLStaticRealm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticRealm.h; sourceTree = "<group>"; };
+		68B5121C1928679E00AF00CB /* LoLStaticRealm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticRealm.m; sourceTree = "<group>"; };
+		68B5121D1928679E00AF00CB /* LoLStaticRecommended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticRecommended.h; sourceTree = "<group>"; };
+		68B5121E1928679E00AF00CB /* LoLStaticRecommended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticRecommended.m; sourceTree = "<group>"; };
+		68B5121F1928679E00AF00CB /* LoLStaticRune.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticRune.h; sourceTree = "<group>"; };
+		68B512201928679E00AF00CB /* LoLStaticRune.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticRune.m; sourceTree = "<group>"; };
+		68B512211928679E00AF00CB /* LoLStaticRuneList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticRuneList.h; sourceTree = "<group>"; };
+		68B512221928679E00AF00CB /* LoLStaticRuneList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticRuneList.m; sourceTree = "<group>"; };
+		68B512231928679E00AF00CB /* LoLStaticSkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticSkin.h; sourceTree = "<group>"; };
+		68B512241928679E00AF00CB /* LoLStaticSkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticSkin.m; sourceTree = "<group>"; };
+		68B512251928679E00AF00CB /* LoLStaticSpellVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticSpellVariables.h; sourceTree = "<group>"; };
+		68B512261928679E00AF00CB /* LoLStaticSpellVariables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticSpellVariables.m; sourceTree = "<group>"; };
+		68B512271928679E00AF00CB /* LoLStaticStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticStats.h; sourceTree = "<group>"; };
+		68B512281928679E00AF00CB /* LoLStaticStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticStats.m; sourceTree = "<group>"; };
+		68B512291928679E00AF00CB /* LoLStaticSummonerSpell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticSummonerSpell.h; sourceTree = "<group>"; };
+		68B5122A1928679E00AF00CB /* LoLStaticSummonerSpell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticSummonerSpell.m; sourceTree = "<group>"; };
+		68B5122B1928679E00AF00CB /* LoLStaticSummonerSpellList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticSummonerSpellList.h; sourceTree = "<group>"; };
+		68B5122C1928679E00AF00CB /* LoLStaticSummonerSpellList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticSummonerSpellList.m; sourceTree = "<group>"; };
+		68B5122D1928679E00AF00CB /* LoLStaticDataAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStaticDataAPI.h; sourceTree = "<group>"; };
+		68B5122E1928679E00AF00CB /* LoLStaticDataAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStaticDataAPI.m; sourceTree = "<group>"; };
+		68B5122F1928679E00AF00CB /* StaticData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticData.h; sourceTree = "<group>"; };
+		68B512321928679E00AF00CB /* LoLAggregatedStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLAggregatedStats.h; sourceTree = "<group>"; };
+		68B512331928679E00AF00CB /* LoLAggregatedStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLAggregatedStats.m; sourceTree = "<group>"; };
+		68B512341928679E00AF00CB /* LoLChampionStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLChampionStats.h; sourceTree = "<group>"; };
+		68B512351928679E00AF00CB /* LoLChampionStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLChampionStats.m; sourceTree = "<group>"; };
+		68B512361928679E00AF00CB /* LoLPlayerStatsSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLPlayerStatsSummary.h; sourceTree = "<group>"; };
+		68B512371928679E00AF00CB /* LoLPlayerStatsSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLPlayerStatsSummary.m; sourceTree = "<group>"; };
+		68B512381928679E00AF00CB /* LoLPlayerStatsSummaryList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLPlayerStatsSummaryList.h; sourceTree = "<group>"; };
+		68B512391928679E00AF00CB /* LoLPlayerStatsSummaryList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLPlayerStatsSummaryList.m; sourceTree = "<group>"; };
+		68B5123A1928679E00AF00CB /* LoLRankedStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLRankedStats.h; sourceTree = "<group>"; };
+		68B5123B1928679E00AF00CB /* LoLRankedStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLRankedStats.m; sourceTree = "<group>"; };
+		68B5123C1928679E00AF00CB /* LoLStatsAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLStatsAPI.h; sourceTree = "<group>"; };
+		68B5123D1928679E00AF00CB /* LoLStatsAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLStatsAPI.m; sourceTree = "<group>"; };
+		68B5123E1928679E00AF00CB /* Stats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stats.h; sourceTree = "<group>"; };
+		68B512411928679E00AF00CB /* LoLMastery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLMastery.h; sourceTree = "<group>"; };
+		68B512421928679E00AF00CB /* LoLMastery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLMastery.m; sourceTree = "<group>"; };
+		68B512431928679E00AF00CB /* LoLMasteryPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLMasteryPage.h; sourceTree = "<group>"; };
+		68B512441928679E00AF00CB /* LoLMasteryPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLMasteryPage.m; sourceTree = "<group>"; };
+		68B512451928679E00AF00CB /* LoLMasteryPages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLMasteryPages.h; sourceTree = "<group>"; };
+		68B512461928679E00AF00CB /* LoLMasteryPages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLMasteryPages.m; sourceTree = "<group>"; };
+		68B512471928679E00AF00CB /* LoLRunePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLRunePage.h; sourceTree = "<group>"; };
+		68B512481928679E00AF00CB /* LoLRunePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLRunePage.m; sourceTree = "<group>"; };
+		68B512491928679E00AF00CB /* LoLRunePages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLRunePages.h; sourceTree = "<group>"; };
+		68B5124A1928679E00AF00CB /* LoLRunePages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLRunePages.m; sourceTree = "<group>"; };
+		68B5124B1928679E00AF00CB /* LoLRuneSlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLRuneSlot.h; sourceTree = "<group>"; };
+		68B5124C1928679E00AF00CB /* LoLRuneSlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLRuneSlot.m; sourceTree = "<group>"; };
+		68B5124D1928679E00AF00CB /* LoLSummoner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLSummoner.h; sourceTree = "<group>"; };
+		68B5124E1928679E00AF00CB /* LoLSummoner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLSummoner.m; sourceTree = "<group>"; };
+		68B5124F1928679E00AF00CB /* LoLSummonerAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLSummonerAPI.h; sourceTree = "<group>"; };
+		68B512501928679E00AF00CB /* LoLSummonerAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLSummonerAPI.m; sourceTree = "<group>"; };
+		68B512511928679E00AF00CB /* Summoner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Summoner.h; sourceTree = "<group>"; };
+		68B512541928679E00AF00CB /* Support.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Support.h; sourceTree = "<group>"; };
+		68B512571928679E00AF00CB /* LoLMatchHistorySummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLMatchHistorySummary.h; sourceTree = "<group>"; };
+		68B512581928679E00AF00CB /* LoLMatchHistorySummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLMatchHistorySummary.m; sourceTree = "<group>"; };
+		68B512591928679E00AF00CB /* LoLMessageOfDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLMessageOfDay.h; sourceTree = "<group>"; };
+		68B5125A1928679E00AF00CB /* LoLMessageOfDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLMessageOfDay.m; sourceTree = "<group>"; };
+		68B5125B1928679E00AF00CB /* LoLRoster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLRoster.h; sourceTree = "<group>"; };
+		68B5125C1928679E00AF00CB /* LoLRoster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLRoster.m; sourceTree = "<group>"; };
+		68B5125D1928679E00AF00CB /* LoLTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLTeam.h; sourceTree = "<group>"; };
+		68B5125E1928679E00AF00CB /* LoLTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLTeam.m; sourceTree = "<group>"; };
+		68B5125F1928679E00AF00CB /* LoLTeamMemberInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLTeamMemberInfo.h; sourceTree = "<group>"; };
+		68B512601928679E00AF00CB /* LoLTeamMemberInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLTeamMemberInfo.m; sourceTree = "<group>"; };
+		68B512611928679E00AF00CB /* LoLTeamStatDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLTeamStatDetail.h; sourceTree = "<group>"; };
+		68B512621928679E00AF00CB /* LoLTeamStatDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLTeamStatDetail.m; sourceTree = "<group>"; };
+		68B512631928679E00AF00CB /* LoLTeamStatSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLTeamStatSummary.h; sourceTree = "<group>"; };
+		68B512641928679E00AF00CB /* LoLTeamStatSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLTeamStatSummary.m; sourceTree = "<group>"; };
+		68B512651928679E00AF00CB /* LoLTeamAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoLTeamAPI.h; sourceTree = "<group>"; };
+		68B512661928679E00AF00CB /* LoLTeamAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoLTeamAPI.m; sourceTree = "<group>"; };
+		68B512671928679E00AF00CB /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
+		68B512B41928682500AF00CB /* LoLAPI-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoLAPI-Prefix.pch"; sourceTree = "<group>"; };
+		B59504B0CA314A1DAA1EA586 /* Pods-LoLAPI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoLAPI.xcconfig"; path = "Pods/Pods-LoLAPI.xcconfig"; sourceTree = "<group>"; };
+		F3301CCC4FD947CCBEEE4689 /* libPods-LoLAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoLAPI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		682BD9D9192865630033DE15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682BD9E0192865630033DE15 /* Foundation.framework in Frameworks */,
+				28C9DC99342F458389B969C3 /* libPods-LoLAPI.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		682BD9E9192865630033DE15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682BD9EE192865630033DE15 /* XCTest.framework in Frameworks */,
+				682BD9F1192865630033DE15 /* UIKit.framework in Frameworks */,
+				682BD9F4192865630033DE15 /* libLoLAPI.a in Frameworks */,
+				682BD9EF192865630033DE15 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		682BD9D3192865630033DE15 = {
+			isa = PBXGroup;
+			children = (
+				B59504B0CA314A1DAA1EA586 /* Pods-LoLAPI.xcconfig */,
+				682BD9DE192865630033DE15 /* Frameworks */,
+				682BD9E1192865630033DE15 /* LoLAPI */,
+				682BD9F5192865630033DE15 /* LoLAPITests */,
+				682BD9DD192865630033DE15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		682BD9DD192865630033DE15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				682BD9DC192865630033DE15 /* libLoLAPI.a */,
+				682BD9EC192865630033DE15 /* LoLAPITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		682BD9DE192865630033DE15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				682BD9DF192865630033DE15 /* Foundation.framework */,
+				682BD9ED192865630033DE15 /* XCTest.framework */,
+				682BD9F0192865630033DE15 /* UIKit.framework */,
+				F3301CCC4FD947CCBEEE4689 /* libPods-LoLAPI.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		682BD9E1192865630033DE15 /* LoLAPI */ = {
+			isa = PBXGroup;
+			children = (
+				68B511B31928679E00AF00CB /* Code */,
+				68B512681928679E00AF00CB /* Examples */,
+			);
+			path = LoLAPI;
+			sourceTree = "<group>";
+		};
+		682BD9F5192865630033DE15 /* LoLAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				682BD9FB192865630033DE15 /* LoLAPITests.m */,
+				682BD9F6192865630033DE15 /* Supporting Files */,
+			);
+			path = LoLAPITests;
+			sourceTree = "<group>";
+		};
+		682BD9F6192865630033DE15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				682BD9F7192865630033DE15 /* LoLAPITests-Info.plist */,
+				682BD9F8192865630033DE15 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68B511B31928679E00AF00CB /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				68B511BC1928679E00AF00CB /* Champion.h */,
+				68B511C91928679E00AF00CB /* Game.h */,
+				68B511D41928679E00AF00CB /* League.h */,
+				68B511D51928679E00AF00CB /* LoLAPI.h */,
+				68B511D61928679E00AF00CB /* LoLAPIManager.h */,
+				68B5122F1928679E00AF00CB /* StaticData.h */,
+				68B5123E1928679E00AF00CB /* Stats.h */,
+				68B512511928679E00AF00CB /* Summoner.h */,
+				68B512541928679E00AF00CB /* Support.h */,
+				68B512671928679E00AF00CB /* Team.h */,
+				68B511D71928679E00AF00CB /* LoLAPIManager.m */,
+				68B511B41928679E00AF00CB /* Champion */,
+				68B511BD1928679E00AF00CB /* Game */,
+				68B511CA1928679E00AF00CB /* League */,
+				68B511D81928679E00AF00CB /* Shared */,
+				68B511ED1928679E00AF00CB /* StaticData */,
+				68B512301928679E00AF00CB /* Stats */,
+				68B5123F1928679E00AF00CB /* Summoner */,
+				68B512521928679E00AF00CB /* Support */,
+				68B512551928679E00AF00CB /* Team */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		68B511B41928679E00AF00CB /* Champion */ = {
+			isa = PBXGroup;
+			children = (
+				68B511B51928679E00AF00CB /* Dtos */,
+				68B511BA1928679E00AF00CB /* LoLChampionAPI.h */,
+				68B511BB1928679E00AF00CB /* LoLChampionAPI.m */,
+			);
+			path = Champion;
+			sourceTree = "<group>";
+		};
+		68B511B51928679E00AF00CB /* Dtos */ = {
+			isa = PBXGroup;
+			children = (
+				68B511B61928679E00AF00CB /* LoLChampion.h */,
+				68B511B71928679E00AF00CB /* LoLChampion.m */,
+				68B511B81928679E00AF00CB /* LoLChampionList.h */,
+				68B511B91928679E00AF00CB /* LoLChampionList.m */,
+			);
+			path = Dtos;
+			sourceTree = "<group>";
+		};
+		68B511BD1928679E00AF00CB /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				68B511BE1928679E00AF00CB /* Dtos */,
+				68B511C71928679E00AF00CB /* LoLGameAPI.h */,
+				68B511C81928679E00AF00CB /* LoLGameAPI.m */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		68B511BE1928679E00AF00CB /* Dtos */ = {
+			isa = PBXGroup;
+			children = (
+				68B511BF1928679E00AF00CB /* LoLGame.h */,
+				68B511C01928679E00AF00CB /* LoLGame.m */,
+				68B511C11928679E00AF00CB /* LoLPlayer.h */,
+				68B511C21928679E00AF00CB /* LoLPlayer.m */,
+				68B511C31928679E00AF00CB /* LoLRawGameStats.h */,
+				68B511C41928679E00AF00CB /* LoLRawGameStats.m */,
+				68B511C51928679E00AF00CB /* LoLRecentGames.h */,
+				68B511C61928679E00AF00CB /* LoLRecentGames.m */,
+			);
+			path = Dtos;
+			sourceTree = "<group>";
+		};
+		68B511CA1928679E00AF00CB /* League */ = {
+			isa = PBXGroup;
+			children = (
+				68B511CB1928679E00AF00CB /* Dtos */,
+				68B511D21928679E00AF00CB /* LoLLeagueAPI.h */,
+				68B511D31928679E00AF00CB /* LoLLeagueAPI.m */,
+			);
+			path = League;
+			sourceTree = "<group>";
+		};
+		68B511CB1928679E00AF00CB /* Dtos */ = {
+			isa = PBXGroup;
+			children = (
+				68B511CC1928679E00AF00CB /* LoLLeague.h */,
+				68B511CD1928679E00AF00CB /* LoLLeague.m */,
+				68B511CE1928679E00AF00CB /* LoLLeagueEntry.h */,
+				68B511CF1928679E00AF00CB /* LoLLeagueEntry.m */,
+				68B511D01928679E00AF00CB /* LoLMiniSeries.h */,
+				68B511D11928679E00AF00CB /* LoLMiniSeries.m */,
+			);
+			path = Dtos;
+			sourceTree = "<group>";
+		};
+		68B511D81928679E00AF00CB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				68B511D91928679E00AF00CB /* Dtos */,
+				68B511DC1928679E00AF00CB /* Extensions */,
+				68B511DE1928679E00AF00CB /* LoLAPIConfig.h */,
+				68B511DF1928679E00AF00CB /* LoLAPIConfig.m */,
+				68B511E01928679E00AF00CB /* LoLBaseAPI.h */,
+				68B511E11928679E00AF00CB /* LoLBaseAPI.m */,
+				68B511E21928679E00AF00CB /* LoLChallengerTierLeagueHelper.h */,
+				68B511E31928679E00AF00CB /* LoLChallengerTierLeagueHelper.m */,
+				68B511E41928679E00AF00CB /* LoLRegionHelper.h */,
+				68B511E51928679E00AF00CB /* LoLRegionHelper.m */,
+				68B511E61928679E00AF00CB /* LoLRegionIDEnum.h */,
+				68B511E71928679E00AF00CB /* LoLRegionInfo.h */,
+				68B511E81928679E00AF00CB /* LoLRegionInfo.m */,
+				68B511E91928679E00AF00CB /* LoLSeasonHelper.h */,
+				68B511EA1928679E00AF00CB /* LoLSeasonHelper.m */,
+				68B511EB1928679E00AF00CB /* LoLVersion.h */,
+				68B511EC1928679E00AF00CB /* LoLVersion.m */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		68B511D91928679E00AF00CB /* Dtos */ = {
+			isa = PBXGroup;
+			children = (
+				68B511DA1928679E00AF00CB /* LoLBaseDTO.h */,
+				68B511DB1928679E00AF00CB /* LoLBaseDTO.m */,
+			);
+			path = Dtos;
+			sourceTree = "<group>";
+		};
+		68B511DC1928679E00AF00CB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				68B511DD1928679E00AF00CB /* LoLBaseAPIPrivate.h */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		68B511ED1928679E00AF00CB /* StaticData */ = {
+			isa = PBXGroup;
+			children = (
+				68B511EE1928679E00AF00CB /* Dtos */,
+				68B5122D1928679E00AF00CB /* LoLStaticDataAPI.h */,
+				68B5122E1928679E00AF00CB /* LoLStaticDataAPI.m */,
+			);
+			path = StaticData;
+			sourceTree = "<group>";
+		};
+		68B511EE1928679E00AF00CB /* Dtos */ = {
+			isa = PBXGroup;
+			children = (
+				68B511EF1928679E00AF00CB /* LoLStaticBasicData.h */,
+				68B511F01928679E00AF00CB /* LoLStaticBasicData.m */,
+				68B511F11928679E00AF00CB /* LoLStaticBasicDataStats.h */,
+				68B511F21928679E00AF00CB /* LoLStaticBasicDataStats.m */,
+				68B511F31928679E00AF00CB /* LoLStaticBlock.h */,
+				68B511F41928679E00AF00CB /* LoLStaticBlock.m */,
+				68B511F51928679E00AF00CB /* LoLStaticBlockItem.h */,
+				68B511F61928679E00AF00CB /* LoLStaticBlockItem.m */,
+				68B511F71928679E00AF00CB /* LoLStaticChampion.h */,
+				68B511F81928679E00AF00CB /* LoLStaticChampion.m */,
+				68B511F91928679E00AF00CB /* LoLStaticChampionList.h */,
+				68B511FA1928679E00AF00CB /* LoLStaticChampionList.m */,
+				68B511FB1928679E00AF00CB /* LoLStaticChampionSpell.h */,
+				68B511FC1928679E00AF00CB /* LoLStaticChampionSpell.m */,
+				68B511FD1928679E00AF00CB /* LoLStaticGold.h */,
+				68B511FE1928679E00AF00CB /* LoLStaticGold.m */,
+				68B511FF1928679E00AF00CB /* LoLStaticGroup.h */,
+				68B512001928679E00AF00CB /* LoLStaticGroup.m */,
+				68B512011928679E00AF00CB /* LoLStaticImage.h */,
+				68B512021928679E00AF00CB /* LoLStaticImage.m */,
+				68B512031928679E00AF00CB /* LoLStaticInfo.h */,
+				68B512041928679E00AF00CB /* LoLStaticInfo.m */,
+				68B512051928679E00AF00CB /* LoLStaticItem.h */,
+				68B512061928679E00AF00CB /* LoLStaticItem.m */,
+				68B512071928679E00AF00CB /* LoLStaticItemList.h */,
+				68B512081928679E00AF00CB /* LoLStaticItemList.m */,
+				68B512091928679E00AF00CB /* LoLStaticItemTree.h */,
+				68B5120A1928679E00AF00CB /* LoLStaticItemTree.m */,
+				68B5120B1928679E00AF00CB /* LoLStaticLevelTip.h */,
+				68B5120C1928679E00AF00CB /* LoLStaticLevelTip.m */,
+				68B5120D1928679E00AF00CB /* LoLStaticMastery.h */,
+				68B5120E1928679E00AF00CB /* LoLStaticMastery.m */,
+				68B5120F1928679E00AF00CB /* LoLStaticMasteryList.h */,
+				68B512101928679E00AF00CB /* LoLStaticMasteryList.m */,
+				68B512111928679E00AF00CB /* LoLStaticMasteryTree.h */,
+				68B512121928679E00AF00CB /* LoLStaticMasteryTree.m */,
+				68B512131928679E00AF00CB /* LoLStaticMasteryTreeItem.h */,
+				68B512141928679E00AF00CB /* LoLStaticMasteryTreeItem.m */,
+				68B512151928679E00AF00CB /* LoLStaticMasteryTreeList.h */,
+				68B512161928679E00AF00CB /* LoLStaticMasteryTreeList.m */,
+				68B512171928679E00AF00CB /* LoLStaticMetaData.h */,
+				68B512181928679E00AF00CB /* LoLStaticMetaData.m */,
+				68B512191928679E00AF00CB /* LoLStaticPassive.h */,
+				68B5121A1928679E00AF00CB /* LoLStaticPassive.m */,
+				68B5121B1928679E00AF00CB /* LoLStaticRealm.h */,
+				68B5121C1928679E00AF00CB /* LoLStaticRealm.m */,
+				68B5121D1928679E00AF00CB /* LoLStaticRecommended.h */,
+				68B5121E1928679E00AF00CB /* LoLStaticRecommended.m */,
+				68B5121F1928679E00AF00CB /* LoLStaticRune.h */,
+				68B512201928679E00AF00CB /* LoLStaticRune.m */,
+				68B512211928679E00AF00CB /* LoLStaticRuneList.h */,
+				68B512221928679E00AF00CB /* LoLStaticRuneList.m */,
+				68B512231928679E00AF00CB /* LoLStaticSkin.h */,
+				68B512241928679E00AF00CB /* LoLStaticSkin.m */,
+				68B512251928679E00AF00CB /* LoLStaticSpellVariables.h */,
+				68B512261928679E00AF00CB /* LoLStaticSpellVariables.m */,
+				68B512271928679E00AF00CB /* LoLStaticStats.h */,
+				68B512281928679E00AF00CB /* LoLStaticStats.m */,
+				68B512291928679E00AF00CB /* LoLStaticSummonerSpell.h */,
+				68B5122A1928679E00AF00CB /* LoLStaticSummonerSpell.m */,
+				68B5122B1928679E00AF00CB /* LoLStaticSummonerSpellList.h */,
+				68B5122C1928679E00AF00CB /* LoLStaticSummonerSpellList.m */,
+			);
+			path = Dtos;
+			sourceTree = "<group>";
+		};
+		68B512301928679E00AF00CB /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				68B512311928679E00AF00CB /* Dtos */,
+				68B5123C1928679E00AF00CB /* LoLStatsAPI.h */,
+				68B5123D1928679E00AF00CB /* LoLStatsAPI.m */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		68B512311928679E00AF00CB /* Dtos */ = {
+			isa = PBXGroup;
+			children = (
+				68B512321928679E00AF00CB /* LoLAggregatedStats.h */,
+				68B512331928679E00AF00CB /* LoLAggregatedStats.m */,
+				68B512341928679E00AF00CB /* LoLChampionStats.h */,
+				68B512351928679E00AF00CB /* LoLChampionStats.m */,
+				68B512361928679E00AF00CB /* LoLPlayerStatsSummary.h */,
+				68B512371928679E00AF00CB /* LoLPlayerStatsSummary.m */,
+				68B512381928679E00AF00CB /* LoLPlayerStatsSummaryList.h */,
+				68B512391928679E00AF00CB /* LoLPlayerStatsSummaryList.m */,
+				68B5123A1928679E00AF00CB /* LoLRankedStats.h */,
+				68B5123B1928679E00AF00CB /* LoLRankedStats.m */,
+			);
+			path = Dtos;
+			sourceTree = "<group>";
+		};
+		68B5123F1928679E00AF00CB /* Summoner */ = {
+			isa = PBXGroup;
+			children = (
+				68B512401928679E00AF00CB /* Dtos */,
+				68B5124F1928679E00AF00CB /* LoLSummonerAPI.h */,
+				68B512501928679E00AF00CB /* LoLSummonerAPI.m */,
+			);
+			path = Summoner;
+			sourceTree = "<group>";
+		};
+		68B512401928679E00AF00CB /* Dtos */ = {
+			isa = PBXGroup;
+			children = (
+				68B512411928679E00AF00CB /* LoLMastery.h */,
+				68B512421928679E00AF00CB /* LoLMastery.m */,
+				68B512431928679E00AF00CB /* LoLMasteryPage.h */,
+				68B512441928679E00AF00CB /* LoLMasteryPage.m */,
+				68B512451928679E00AF00CB /* LoLMasteryPages.h */,
+				68B512461928679E00AF00CB /* LoLMasteryPages.m */,
+				68B512471928679E00AF00CB /* LoLRunePage.h */,
+				68B512481928679E00AF00CB /* LoLRunePage.m */,
+				68B512491928679E00AF00CB /* LoLRunePages.h */,
+				68B5124A1928679E00AF00CB /* LoLRunePages.m */,
+				68B5124B1928679E00AF00CB /* LoLRuneSlot.h */,
+				68B5124C1928679E00AF00CB /* LoLRuneSlot.m */,
+				68B5124D1928679E00AF00CB /* LoLSummoner.h */,
+				68B5124E1928679E00AF00CB /* LoLSummoner.m */,
+			);
+			path = Dtos;
+			sourceTree = "<group>";
+		};
+		68B512521928679E00AF00CB /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				68B512B41928682500AF00CB /* LoLAPI-Prefix.pch */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		68B512551928679E00AF00CB /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				68B512561928679E00AF00CB /* Dtos */,
+				68B512651928679E00AF00CB /* LoLTeamAPI.h */,
+				68B512661928679E00AF00CB /* LoLTeamAPI.m */,
+			);
+			path = Team;
+			sourceTree = "<group>";
+		};
+		68B512561928679E00AF00CB /* Dtos */ = {
+			isa = PBXGroup;
+			children = (
+				68B512571928679E00AF00CB /* LoLMatchHistorySummary.h */,
+				68B512581928679E00AF00CB /* LoLMatchHistorySummary.m */,
+				68B512591928679E00AF00CB /* LoLMessageOfDay.h */,
+				68B5125A1928679E00AF00CB /* LoLMessageOfDay.m */,
+				68B5125B1928679E00AF00CB /* LoLRoster.h */,
+				68B5125C1928679E00AF00CB /* LoLRoster.m */,
+				68B5125D1928679E00AF00CB /* LoLTeam.h */,
+				68B5125E1928679E00AF00CB /* LoLTeam.m */,
+				68B5125F1928679E00AF00CB /* LoLTeamMemberInfo.h */,
+				68B512601928679E00AF00CB /* LoLTeamMemberInfo.m */,
+				68B512611928679E00AF00CB /* LoLTeamStatDetail.h */,
+				68B512621928679E00AF00CB /* LoLTeamStatDetail.m */,
+				68B512631928679E00AF00CB /* LoLTeamStatSummary.h */,
+				68B512641928679E00AF00CB /* LoLTeamStatSummary.m */,
+			);
+			path = Dtos;
+			sourceTree = "<group>";
+		};
+		68B512681928679E00AF00CB /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		682BD9DB192865630033DE15 /* LoLAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 682BD9FF192865630033DE15 /* Build configuration list for PBXNativeTarget "LoLAPI" */;
+			buildPhases = (
+				19B083A384EE4FBBAF64FA3B /* Check Pods Manifest.lock */,
+				682BD9D8192865630033DE15 /* Sources */,
+				682BD9D9192865630033DE15 /* Frameworks */,
+				682BD9DA192865630033DE15 /* CopyFiles */,
+				78BEEF5268024E82AA48D3EB /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoLAPI;
+			productName = LoLAPI;
+			productReference = 682BD9DC192865630033DE15 /* libLoLAPI.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		682BD9EB192865630033DE15 /* LoLAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 682BDA02192865630033DE15 /* Build configuration list for PBXNativeTarget "LoLAPITests" */;
+			buildPhases = (
+				682BD9E8192865630033DE15 /* Sources */,
+				682BD9E9192865630033DE15 /* Frameworks */,
+				682BD9EA192865630033DE15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				682BD9F3192865630033DE15 /* PBXTargetDependency */,
+			);
+			name = LoLAPITests;
+			productName = LoLAPITests;
+			productReference = 682BD9EC192865630033DE15 /* LoLAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		682BD9D4192865630033DE15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 682BD9D7192865630033DE15 /* Build configuration list for PBXProject "LoLAPI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 682BD9D3192865630033DE15;
+			productRefGroup = 682BD9DD192865630033DE15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				682BD9DB192865630033DE15 /* LoLAPI */,
+				682BD9EB192865630033DE15 /* LoLAPITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		682BD9EA192865630033DE15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682BD9FA192865630033DE15 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19B083A384EE4FBBAF64FA3B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		78BEEF5268024E82AA48D3EB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-LoLAPI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		682BD9D8192865630033DE15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68B5128A1928679E00AF00CB /* LoLStaticItemList.m in Sources */,
+				68B5126D1928679E00AF00CB /* LoLPlayer.m in Sources */,
+				68B512891928679E00AF00CB /* LoLStaticItem.m in Sources */,
+				68B512941928679E00AF00CB /* LoLStaticRealm.m in Sources */,
+				68B5126A1928679E00AF00CB /* LoLChampionList.m in Sources */,
+				68B5128F1928679E00AF00CB /* LoLStaticMasteryTree.m in Sources */,
+				68B5127E1928679E00AF00CB /* LoLStaticBasicData.m in Sources */,
+				68B5129B1928679E00AF00CB /* LoLStaticSummonerSpell.m in Sources */,
+				68B512701928679E00AF00CB /* LoLGameAPI.m in Sources */,
+				68B512781928679E00AF00CB /* LoLBaseAPI.m in Sources */,
+				68B512A71928679E00AF00CB /* LoLRunePage.m in Sources */,
+				68B512971928679E00AF00CB /* LoLStaticRuneList.m in Sources */,
+				68B512A01928679E00AF00CB /* LoLPlayerStatsSummary.m in Sources */,
+				68B512A51928679E00AF00CB /* LoLMasteryPage.m in Sources */,
+				68B512881928679E00AF00CB /* LoLStaticInfo.m in Sources */,
+				68B512801928679E00AF00CB /* LoLStaticBlock.m in Sources */,
+				68B5126E1928679E00AF00CB /* LoLRawGameStats.m in Sources */,
+				68B512A41928679E00AF00CB /* LoLMastery.m in Sources */,
+				68B512751928679E00AF00CB /* LoLAPIManager.m in Sources */,
+				68B5126C1928679E00AF00CB /* LoLGame.m in Sources */,
+				68B512761928679E00AF00CB /* LoLBaseDTO.m in Sources */,
+				68B5128E1928679E00AF00CB /* LoLStaticMasteryList.m in Sources */,
+				68B5127C1928679E00AF00CB /* LoLSeasonHelper.m in Sources */,
+				68B512901928679E00AF00CB /* LoLStaticMasteryTreeItem.m in Sources */,
+				68B512B11928679E00AF00CB /* LoLTeamStatDetail.m in Sources */,
+				68B512791928679E00AF00CB /* LoLChallengerTierLeagueHelper.m in Sources */,
+				68B512AA1928679E00AF00CB /* LoLSummoner.m in Sources */,
+				68B5128D1928679E00AF00CB /* LoLStaticMastery.m in Sources */,
+				68B512AF1928679E00AF00CB /* LoLTeam.m in Sources */,
+				68B5129D1928679E00AF00CB /* LoLStaticDataAPI.m in Sources */,
+				68B512931928679E00AF00CB /* LoLStaticPassive.m in Sources */,
+				68B512951928679E00AF00CB /* LoLStaticRecommended.m in Sources */,
+				68B5129C1928679E00AF00CB /* LoLStaticSummonerSpellList.m in Sources */,
+				68B512B01928679E00AF00CB /* LoLTeamMemberInfo.m in Sources */,
+				68B512721928679E00AF00CB /* LoLLeagueEntry.m in Sources */,
+				68B512A61928679E00AF00CB /* LoLMasteryPages.m in Sources */,
+				68B5126B1928679E00AF00CB /* LoLChampionAPI.m in Sources */,
+				68B512851928679E00AF00CB /* LoLStaticGold.m in Sources */,
+				68B5128C1928679E00AF00CB /* LoLStaticLevelTip.m in Sources */,
+				68B512A11928679E00AF00CB /* LoLPlayerStatsSummaryList.m in Sources */,
+				68B512A31928679E00AF00CB /* LoLStatsAPI.m in Sources */,
+				68B512691928679E00AF00CB /* LoLChampion.m in Sources */,
+				68B512921928679E00AF00CB /* LoLStaticMetaData.m in Sources */,
+				68B5127D1928679E00AF00CB /* LoLVersion.m in Sources */,
+				68B5126F1928679E00AF00CB /* LoLRecentGames.m in Sources */,
+				68B5127A1928679E00AF00CB /* LoLRegionHelper.m in Sources */,
+				68B512AC1928679E00AF00CB /* LoLMatchHistorySummary.m in Sources */,
+				68B512B21928679E00AF00CB /* LoLTeamStatSummary.m in Sources */,
+				68B512911928679E00AF00CB /* LoLStaticMasteryTreeList.m in Sources */,
+				68B512821928679E00AF00CB /* LoLStaticChampion.m in Sources */,
+				68B512AD1928679E00AF00CB /* LoLMessageOfDay.m in Sources */,
+				68B512771928679E00AF00CB /* LoLAPIConfig.m in Sources */,
+				68B512A21928679E00AF00CB /* LoLRankedStats.m in Sources */,
+				68B512A91928679E00AF00CB /* LoLRuneSlot.m in Sources */,
+				68B512B31928679E00AF00CB /* LoLTeamAPI.m in Sources */,
+				68B5129E1928679E00AF00CB /* LoLAggregatedStats.m in Sources */,
+				68B512861928679E00AF00CB /* LoLStaticGroup.m in Sources */,
+				68B512741928679E00AF00CB /* LoLLeagueAPI.m in Sources */,
+				68B512731928679E00AF00CB /* LoLMiniSeries.m in Sources */,
+				68B5127F1928679E00AF00CB /* LoLStaticBasicDataStats.m in Sources */,
+				68B512811928679E00AF00CB /* LoLStaticBlockItem.m in Sources */,
+				68B512AE1928679E00AF00CB /* LoLRoster.m in Sources */,
+				68B512711928679E00AF00CB /* LoLLeague.m in Sources */,
+				68B512AB1928679E00AF00CB /* LoLSummonerAPI.m in Sources */,
+				68B512991928679E00AF00CB /* LoLStaticSpellVariables.m in Sources */,
+				68B512841928679E00AF00CB /* LoLStaticChampionSpell.m in Sources */,
+				68B512961928679E00AF00CB /* LoLStaticRune.m in Sources */,
+				68B512831928679E00AF00CB /* LoLStaticChampionList.m in Sources */,
+				68B512871928679E00AF00CB /* LoLStaticImage.m in Sources */,
+				68B512A81928679E00AF00CB /* LoLRunePages.m in Sources */,
+				68B5127B1928679E00AF00CB /* LoLRegionInfo.m in Sources */,
+				68B512981928679E00AF00CB /* LoLStaticSkin.m in Sources */,
+				68B5129F1928679E00AF00CB /* LoLChampionStats.m in Sources */,
+				68B5128B1928679E00AF00CB /* LoLStaticItemTree.m in Sources */,
+				68B5129A1928679E00AF00CB /* LoLStaticStats.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		682BD9E8192865630033DE15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682BD9FC192865630033DE15 /* LoLAPITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		682BD9F3192865630033DE15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 682BD9DB192865630033DE15 /* LoLAPI */;
+			targetProxy = 682BD9F2192865630033DE15 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		682BD9F8192865630033DE15 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				682BD9F9192865630033DE15 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		682BD9FD192865630033DE15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		682BD9FE192865630033DE15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		682BDA00192865630033DE15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B59504B0CA314A1DAA1EA586 /* Pods-LoLAPI.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/LoLAPI.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LoLAPI/Code/Support/LoLAPI-Prefix.pch";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		682BDA01192865630033DE15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B59504B0CA314A1DAA1EA586 /* Pods-LoLAPI.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/LoLAPI.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LoLAPI/Code/Support/LoLAPI-Prefix.pch";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		682BDA03192865630033DE15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B59504B0CA314A1DAA1EA586 /* Pods-LoLAPI.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LoLAPI/Code/Support/LoLAPI-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LoLAPITests/LoLAPITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		682BDA04192865630033DE15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LoLAPI/Code/Support/LoLAPI-Prefix.pch";
+				INFOPLIST_FILE = "LoLAPITests/LoLAPITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		682BD9D7192865630033DE15 /* Build configuration list for PBXProject "LoLAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				682BD9FD192865630033DE15 /* Debug */,
+				682BD9FE192865630033DE15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		682BD9FF192865630033DE15 /* Build configuration list for PBXNativeTarget "LoLAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				682BDA00192865630033DE15 /* Debug */,
+				682BDA01192865630033DE15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		682BDA02192865630033DE15 /* Build configuration list for PBXNativeTarget "LoLAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				682BDA03192865630033DE15 /* Debug */,
+				682BDA04192865630033DE15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 682BD9D4192865630033DE15 /* Project object */;
+}

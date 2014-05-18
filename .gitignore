@@ -1,0 +1,32 @@
+Build
+build
+
+
+# Temp files
+*~.nib
+*.swp
+*.orig
+
+
+# OSX related
+.DS_Store
+
+
+# User settings (XCode specific)
+*.mode1v3
+*.mode2v3
+*.pbxuser
+*.perspectivev3
+*.xcuserdatad
+
+
+# CocoaPods
+Pods
+LoLAPI.xcodeproj/xcshareddata/
+LoLAPI.xcworkspace/xcshareddata/xcschemes/
+DerivedData
+
+
+# other
+.bundle
+bin
