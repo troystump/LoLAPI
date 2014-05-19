@@ -40,7 +40,7 @@ And the following linker flags must be set:
 
 The LoLAPI codebase is completely written using ARC.
 
-If you are including the LoLAPI sources directly into a project that does not yet use [Automatic Reference Counting](http://clang.llvm.org/docs/AutomaticReferenceCounting.html), you will need to set the `-fobjc-arc` compiler flag on all of the RestKit source files. To do this in Xcode, go to your active target and select the "Build Phases" tab. Now select all RestKit source files, press Enter, insert `-fobjc-arc` and then "Done" to enable ARC for RestKit.
+If you are including the LoLAPI sources directly into a project that does not yet use [Automatic Reference Counting](http://clang.llvm.org/docs/AutomaticReferenceCounting.html), you will need to set the `-fobjc-arc` compiler flag on all of the LoLAPI source files. To do this in Xcode, go to your active target and select the "Build Phases" tab. Now select all LoLAPI source files, press Enter, insert `-fobjc-arc` and then "Done" to enable ARC for LoLAPI.
 
 ## Installation
 
@@ -55,7 +55,7 @@ $ [sudo] gem install cocoapods
 $ pod setup
 ```
 
-Change to the directory of your Xcode project, and Create and Edit your Podfile and add RestKit:
+Change to the directory of your Xcode project, and Create and Edit your Podfile and add LoLAPI:
 
 ``` bash
 $ cd /path/to/MyProject
@@ -91,4 +91,4 @@ LoLAPI is licensed under the terms of the [Apache License, version 2.0](http://w
 ## Credits
 
 LoLAPI is brought to you by [Troy Stump](http://twitter.com/troystump).
-Special thanks to [Blake Watters](http://twitter.com/blakewatters) and the RestKit team for their amazing framework.
+Special thanks to [Blake Watters](http://twitter.com/blakewatters) and the RestKit team for their amazing framework (and also for the formatting of this README).
