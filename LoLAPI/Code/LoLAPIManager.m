@@ -124,7 +124,7 @@ static LoLTeamAPI *_teamAPI;
 
 #pragma mark - Champion API
 
-+ (void)getChampionsWithFreeToPlayStatusOnly:(BOOL)isFreeToPlay success:(void(^)(NSArray *champions))successBlock failure:(void(^)(NSError *error))failureBlock
++ (void)getChampionsWithFreeToPlayStatusOnly:(BOOL)isFreeToPlay success:(void(^)(LoLChampionList *championList))successBlock failure:(void(^)(NSError *error))failureBlock
 {
     [_championAPI getChampionsWithFreeToPlayStatusOnly:isFreeToPlay usingAPIKey:_apiKey success:successBlock failure:failureBlock];
 }

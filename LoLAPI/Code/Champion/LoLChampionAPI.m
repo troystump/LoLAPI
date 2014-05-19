@@ -25,10 +25,10 @@
 }
 
 
-- (void)getChampionsWithFreeToPlayStatusOnly:(BOOL)isFreeToPlay usingAPIKey:(NSString*)apiKey success:(void(^)(NSArray *champions))successBlock failure:(void(^)(NSError *error))failureBlock
+- (void)getChampionsWithFreeToPlayStatusOnly:(BOOL)isFreeToPlay usingAPIKey:(NSString*)apiKey success:(void(^)(LoLChampionList *champions))successBlock failure:(void(^)(NSError *error))failureBlock
 {
     void (^success)(RKObjectRequestOperation*, RKMappingResult*) = ^(RKObjectRequestOperation *operation, RKMappingResult *result) {
-        successBlock(result.array);
+        successBlock([result firstObject]);
     };
     void (^failure)(RKObjectRequestOperation *operation, NSError *error) = ^(RKObjectRequestOperation *operation, NSError *error) {
         failureBlock(error);

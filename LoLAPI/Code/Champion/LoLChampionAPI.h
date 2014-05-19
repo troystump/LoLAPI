@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "LoLBaseAPI.h"
+#import "LoLChampionList.h"
 #import "LoLChampion.h"
 
 
@@ -18,7 +19,7 @@
 
 
 // methods
-- (void)getChampionsWithFreeToPlayStatusOnly:(BOOL)isFreeToPlay usingAPIKey:(NSString*)apiKey success:(void(^)(NSArray *champions))successBlock failure:(void(^)(NSError *error))failureBlock;
+- (void)getChampionsWithFreeToPlayStatusOnly:(BOOL)isFreeToPlay usingAPIKey:(NSString*)apiKey success:(void(^)(LoLChampionList *champions))successBlock failure:(void(^)(NSError *error))failureBlock;
 - (void)getChampionWithID:(NSInteger)championID usingAPIKey:(NSString*)apiKey success:(void(^)(LoLChampion *champion))successBlock failure:(void(^)(NSError *error))failureBlock;
 
 @end

@@ -16,6 +16,21 @@ To begin using LoLAPI in your project, simply setup your League of Legends API k
 [LoLAPIManager initWithAPIKey:@"<your_key>" region:LoLRegionIDNorthAmerica];
 ```
 
+## Examples
+
+### Get all champions
+``` objective-c
+[LoLAPIManager getChampionsWithFreeToPlayStatusOnly:NO success:^(LoLChampionList *championList) {
+    for (LoLChampion *champion in championList.champions) {
+        NSLog(@"champion id is: %ld", (long)[champion.id integerValue]);
+    }
+} failure:^(NSError *error) {
+    UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Failed to retreive champions. Please try again later." delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+    
+    [errorAlert show];
+}];
+```
+
 ## Requirements
 
 LoLAPI requires [iOS 5.0](http://developer.apple.com/library/ios/#releasenotes/General/WhatsNewIniPhoneOS/Articles/iOS5.html#//apple_ref/doc/uid/TP30915195-SW1) and above or [Mac OS X 10.7](http://developer.apple.com/library/mac/#releasenotes/MacOSX/WhatsNewInOSX/Articles/MacOSX10_7.html#//apple_ref/doc/uid/TP40010355-SW5) and above.

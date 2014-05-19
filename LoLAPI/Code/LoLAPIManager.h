@@ -22,7 +22,7 @@
 + (instancetype)sharedManager;
 
 // champion api
-+ (void)getChampionsWithFreeToPlayStatusOnly:(BOOL)isFreeToPlay success:(void(^)(NSArray *champions))successBlock failure:(void(^)(NSError *error))failureBlock;
++ (void)getChampionsWithFreeToPlayStatusOnly:(BOOL)isFreeToPlay success:(void(^)(LoLChampionList *championList))successBlock failure:(void(^)(NSError *error))failureBlock;
 + (void)getChampionWithID:(NSInteger)championID success:(void(^)(LoLChampion *champion))successBlock failure:(void(^)(NSError *error))failureBlock;
 
 // game api
