@@ -42,6 +42,24 @@ static LoLTeamAPI *_teamAPI;
 }
 
 
++ (BOOL)setSelectedRegion:(LoLRegionID)region
+{
+    LoLAPIManager *sharedManager = [self sharedManager];
+    BOOL isRegionSet = NO;
+    
+    
+    if (_apiKey.length && sharedManager) {
+        _region = region;
+        
+        [[self sharedManager] installAPIs];
+
+        isRegionSet = YES;
+    }
+    
+    return isRegionSet;
+}
+
+
 + (instancetype)sharedManager
 {
     static id sharedInstance;

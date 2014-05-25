@@ -77,7 +77,7 @@ static NSDictionary *regions;
     switch (regionID) {
         case LoLRegionIDKorea:
         {
-            regionHostURL = @"https://asia.api.pvp.net/";
+            regionHostURL = @"https://kr.api.pvp.net/";
             break;
         }
         case LoLRegionIDRussia:

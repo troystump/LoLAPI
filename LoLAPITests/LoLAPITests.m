@@ -38,7 +38,7 @@
     
     hxRunInMainLoop(^(BOOL *done) {
         [LoLAPIManager getChampionsWithFreeToPlayStatusOnly:NO
-                                                    success:^(NSArray *champions) {
+                                                    success:^(LoLChampionList *championList) {
                                                         *done = YES;
                                                     }
                                                     failure:^(NSError *error) {
@@ -48,6 +48,15 @@
     
     XCTAssertNil(champions, @"failed to get champion data");
 }
+
+
+- (void)testKoreanHostname
+{
+    [LoLAPIManager setSelectedRegion:LoLRegionIDKorea];
+    
+    [self testChampionAPI];
+}
+
 
 // wrapper to test asyncronous methods
 static inline void hxRunInMainLoop(void(^block)(BOOL *done)) {

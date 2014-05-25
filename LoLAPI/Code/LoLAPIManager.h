@@ -19,6 +19,7 @@
 @interface LoLAPIManager : NSObject
 
 + (void)initWithAPIKey:(NSString*)apiKey region:(LoLRegionID)region;
++ (BOOL)setSelectedRegion:(LoLRegionID)region;
 + (instancetype)sharedManager;
 
 // champion api
