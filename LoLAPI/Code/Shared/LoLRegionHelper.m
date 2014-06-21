@@ -75,20 +75,60 @@ static NSDictionary *regions;
     
     
     switch (regionID) {
+        case LoLRegionIDBrazil:
+        {
+            regionHostURL = @"https://br.api.pvp.net/";
+            break;
+        }
+        case LoLRegionIDEuropeNordicAndEast:
+        {
+            regionHostURL = @"https://eune.api.pvp.net/";
+            break;
+        }
+        case LoLRegionIDEuropeWest:
+        {
+            regionHostURL = @"https://euw.api.pvp.net/";
+            break;
+        }
         case LoLRegionIDKorea:
         {
             regionHostURL = @"https://kr.api.pvp.net/";
             break;
         }
+        case LoLRegionIDLatinAmericaNorth:
+        {
+            regionHostURL = @"https://lan.api.pvp.net/";
+            break;
+        }
+        case LoLRegionIDLatinAmericaSouth:
+        {
+            regionHostURL = @"https://las.api.pvp.net/";
+            break;
+        }
+        case LoLRegionIDNorthAmerica:
+        {
+            regionHostURL = @"https://na.api.pvp.net/";
+            break;
+        }
+            case LoLRegionIDOceania:
+        {
+            regionHostURL = @"https://oce.api.pvp.net/";
+            break;
+        }
         case LoLRegionIDRussia:
+        {
+            regionHostURL = @"https://ru.api.pvp.net/";
+            break;
+        }
         case LoLRegionIDTurkey:
         {
-            regionHostURL = @"https://eu.api.pvp.net/";
+            regionHostURL = @"https://tr.api.pvp.net/";
             break;
         }
         default:
         {
-            regionHostURL = @"https://prod.api.pvp.net/";
+            break;
+            regionHostURL = @"https://na.api.pvp.net/";
         }
     }
     
