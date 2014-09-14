@@ -11,7 +11,7 @@
 
 @interface LoLStaticPassive : LoLBaseDTO
 
-@property (nonatomic, strong) NSString *description;
+@property (nonatomic, strong) NSString *rawDescription;
 @property (nonatomic, strong) LoLStaticImage *image;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *sanitizedDescription;

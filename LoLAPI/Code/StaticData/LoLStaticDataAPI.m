@@ -359,6 +359,7 @@
     NSMutableArray *staticPassivePropertyNames = [LoLStaticPassive getAllPropertyNames];
     NSMutableArray *staticRecommendedPropertyNames = [LoLStaticRecommended getAllPropertyNames];
     NSMutableArray *staticBlockPropertyNames = [LoLStaticBlock getAllPropertyNames];
+    NSString *nameOfDescriptionProperty = @"rawDescription";
     
     
     // remove any relationship mapping attributes to avoid "duplicate mapping" error
@@ -379,6 +380,10 @@
     
     // create mapping for StaticChampionSpell DTO
     staticChampionSpellMapping = [RKObjectMapping mappingForClass:[LoLStaticChampionSpell class]];
+    // xcode 6+: need to manually rename/map our response's "description" property to our "staticBasicDataDescription" property
+    [staticChampionSpellPropertyNames removeObject:nameOfDescriptionProperty];
+    [staticChampionSpellMapping addAttributeMappingsFromDictionary:@{@"description" : nameOfDescriptionProperty}];
+    // map remaining properties
     [staticChampionSpellMapping addAttributeMappingsFromArray:staticChampionSpellPropertyNames];
     
     // create mapping for StaticImage DTO
@@ -391,6 +396,10 @@
     
     // create mapping for StaticPassive DTO
     staticPassiveMapping = [RKObjectMapping mappingForClass:[LoLStaticPassive class]];
+    // xcode 6+: need to manually rename/map our response's "description" property to our "staticBasicDataDescription" property
+    [staticPassivePropertyNames removeObject:nameOfDescriptionProperty];
+    [staticPassiveMapping addAttributeMappingsFromDictionary:@{@"description" : nameOfDescriptionProperty}];
+    // map remaining properties
     [staticPassiveMapping addAttributeMappingsFromArray:staticPassivePropertyNames];
     
     // create mapping for StaticRecommended DTO
@@ -512,7 +521,8 @@
     NSMutableArray *staticItemListPropertyNames = [LoLStaticItemList getAllPropertyNames];
     NSMutableArray *staticBasicDataPropertyNames = [LoLStaticBasicData getAllPropertyNames];
     NSMutableArray *staticItemPropertyNames = [LoLStaticItem getAllPropertyNames];
-
+    NSString *nameOfDescriptionProperty = @"rawDescription";
+    
     
     // remove any relationship mapping attributes to avoid "duplicate mapping" error
     [staticItemListPropertyNames removeObjectsInArray:@[@"basic", @"data", @"groups", @"tree"]];
@@ -525,6 +535,10 @@
     
     // create mapping for StaticBasicData DTO
     staticBasicDataMapping = [RKObjectMapping mappingForClass:[LoLStaticBasicData class]];
+    // xcode 6+: need to manually rename/map our response's "description" property to our "staticBasicDataDescription" property
+    [staticBasicDataPropertyNames removeObject:nameOfDescriptionProperty];
+    [staticBasicDataMapping addAttributeMappingsFromDictionary:@{@"description" : nameOfDescriptionProperty}];
+    // map remaining properties
     [staticBasicDataMapping addAttributeMappingsFromArray:staticBasicDataPropertyNames];
     
     // create mapping for StaticGroup DTO
@@ -533,6 +547,10 @@
     
     // create mapping for StaticItem DTO
     staticItemMapping = [RKObjectMapping mappingForClass:[LoLStaticItem class]];
+    // xcode 6+: need to manually rename/map our response's "description" property to our "staticBasicDataDescription" property
+    [staticItemPropertyNames removeObject:nameOfDescriptionProperty];
+    [staticItemMapping addAttributeMappingsFromDictionary:@{@"description" : nameOfDescriptionProperty}];
+    // map remaining properties
     [staticItemMapping addAttributeMappingsFromArray:staticItemPropertyNames];
     
     // create mapping for StaticItemTree DTO
@@ -635,6 +653,7 @@
     NSMutableArray *staticMasteryPropertyNames = [LoLStaticMastery getAllPropertyNames];
     NSMutableArray *staticMasteryTreePropertyNames = [LoLStaticMasteryTree getAllPropertyNames];
     NSMutableArray *staticMasteryTreeListPropertyNames = [LoLStaticMasteryTreeList getAllPropertyNames];
+    NSString *nameOfDescriptionProperty = @"rawDescription";
     
     
     // remove any relationship mapping attributes to avoid "duplicate mapping" error
@@ -649,6 +668,10 @@
     
     // create mapping for StaticMastery DTO
     staticMasteryMapping = [RKObjectMapping mappingForClass:[LoLStaticMastery class]];
+    // xcode 6+: need to manually rename/map our response's "description" property to our "staticBasicDataDescription" property
+    [staticMasteryPropertyNames removeObject:nameOfDescriptionProperty];
+    [staticMasteryMapping addAttributeMappingsFromDictionary:@{@"description" : nameOfDescriptionProperty}];
+    // map remaining properties
     [staticMasteryMapping addAttributeMappingsFromArray:staticMasteryPropertyNames];
     
     // create mapping for StaticMasteryTree DTO
@@ -704,7 +727,6 @@
     // create relationship mapping to link the array of StaticMasteryTreeItem DTOs to the StaticMasteryTreeList DTO
     [staticMasteryTreeListMapping addRelationshipMappingWithSourceKeyPath:@"Utility" mapping:staticMasteryTreeItemMapping];
     
-    
     return @[
              [RKResponseDescriptor responseDescriptorWithMapping:staticMasteryListMapping
                                                           method:RKRequestMethodGET
@@ -750,8 +772,9 @@
     NSMutableArray *staticRuneListPropertyNames = [LoLStaticRuneList getAllPropertyNames];
     NSMutableArray *staticBasicDataPropertyNames = [LoLStaticBasicData getAllPropertyNames];
     NSMutableArray *staticRunePropertyNames = [LoLStaticRune getAllPropertyNames];
+    NSString *nameOfDescriptionProperty = @"rawDescription";
 
-
+    
     // remove any relationship mapping attributes to avoid "duplicate mapping" error
     [staticRuneListPropertyNames removeObjectsInArray:@[@"basic", @"data"]];
     [staticBasicDataPropertyNames removeObjectsInArray:@[@"gold", @"image", @"rune", @"stats"]];
@@ -763,10 +786,18 @@
 
     // create mapping for StaticBasicData DTO
     staticBasicDataMapping = [RKObjectMapping mappingForClass:[LoLStaticBasicData class]];
+    // xcode 6+: need to manually rename/map our response's "description" property to our "staticBasicDataDescription" property
+    [staticBasicDataPropertyNames removeObject:nameOfDescriptionProperty];
+    [staticBasicDataMapping addAttributeMappingsFromDictionary:@{@"description" : nameOfDescriptionProperty}];
+    // map remaining properties
     [staticBasicDataMapping addAttributeMappingsFromArray:staticBasicDataPropertyNames];
     
     // create mapping for StaticRune DTO
     staticRuneMapping = [RKObjectMapping mappingForClass:[LoLStaticRune class]];
+    // xcode 6+: need to manually rename/map our response's "description" property to our "staticBasicDataDescription" property
+    [staticRunePropertyNames removeObject:nameOfDescriptionProperty];
+    [staticRuneMapping addAttributeMappingsFromDictionary:@{@"description" : nameOfDescriptionProperty}];
+    // map remaining properties
     [staticRuneMapping addAttributeMappingsFromArray:staticRunePropertyNames];
 
     // create mapping for StaticBasicDataStats DTO
@@ -857,6 +888,7 @@
     RKDynamicMapping *dynamicStaticSummonerSpellMapping;
     NSMutableArray *staticSummonerSpellListPropertyNames = [LoLStaticSummonerSpellList getAllPropertyNames];
     NSMutableArray *staticSummonerSpellPropertyNames = [LoLStaticSummonerSpell getAllPropertyNames];
+    NSString *nameOfDescriptionProperty = @"rawDescription";
 
     
     // remove any relationship mapping attributes to avoid "duplicate mapping" error
@@ -869,6 +901,10 @@
 
     // create mapping for StaticSummonerSpell DTO
     staticSummonerSpellMapping = [RKObjectMapping mappingForClass:[LoLStaticSummonerSpell class]];
+    // xcode 6+: need to manually rename/map our response's "description" property to our "staticBasicDataDescription" property
+    [staticSummonerSpellPropertyNames removeObject:nameOfDescriptionProperty];
+    [staticSummonerSpellMapping addAttributeMappingsFromDictionary:@{@"description" : nameOfDescriptionProperty}];
+    // map remaining properties
     [staticSummonerSpellMapping addAttributeMappingsFromArray:staticSummonerSpellPropertyNames];
     
     // create mapping for StaticImage DTO

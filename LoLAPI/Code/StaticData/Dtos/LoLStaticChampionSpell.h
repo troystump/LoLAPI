@@ -21,7 +21,7 @@
 @property (nonatomic, strong) NSArray *cost; // List[int]
 @property (nonatomic, strong) NSString *costBurn;
 @property (nonatomic, strong) NSString *costType;
-@property (nonatomic, strong) NSString *description;
+@property (nonatomic, strong) NSString *rawDescription;
 @property (nonatomic, strong) NSArray *effect; // List[object]	This field is a List of List of Integer.
 @property (nonatomic, strong) NSArray *effectBurn; // List[string]
 @property (nonatomic, strong) LoLStaticImage *image;
