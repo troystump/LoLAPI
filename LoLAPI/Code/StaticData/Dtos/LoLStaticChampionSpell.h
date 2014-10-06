@@ -35,6 +35,6 @@
 @property (nonatomic, strong) NSString *sanitizedDescription;
 @property (nonatomic, strong) NSString *sanitizedTooltip;
 @property (nonatomic, strong) NSString *tooltip;
-@property (nonatomic, strong) LoLStaticSpellVariables *vars; // List[SpellVarsDto]
+@property (nonatomic, strong) NSArray *vars; // List[SpellVarsDto]
 
 @end
