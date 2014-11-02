@@ -12,7 +12,7 @@
 @interface LoLRankedStats : LoLBaseDTO
 
 @property (nonatomic, strong) NSArray *champions; // list[championstats]
-@property (nonatomic, strong) NSNumber *modifyDate;
-@property (nonatomic, strong) NSNumber *summonerId;
+@property (nonatomic, strong) NSDate *modifyDate;
+@property (nonatomic, assign) NSInteger summonerId;
 
 @end

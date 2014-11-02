@@ -11,9 +11,9 @@
 
 @interface LoLStaticInfo : LoLBaseDTO
 
-@property (nonatomic, strong) NSNumber *attack;
-@property (nonatomic, strong) NSNumber *defense;
-@property (nonatomic, strong) NSNumber *difficulty;
-@property (nonatomic, strong) NSNumber *magic;
+@property (nonatomic, assign) NSInteger attack;
+@property (nonatomic, assign) NSInteger defense;
+@property (nonatomic, assign) NSInteger difficulty;
+@property (nonatomic, assign) NSInteger magic;
 
 @end

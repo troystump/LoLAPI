@@ -170,8 +170,8 @@
          RKObjectMapping *summonerIDAsKeyMapping = [RKObjectMapping mappingForClass:[NSMutableDictionary class]];
          
          
-         for (NSNumber *summonerID in summonerIDs) {
-             [summonerIDAsKeyMapping addRelationshipMappingWithSourceKeyPath:[NSString stringWithFormat:@"%@", summonerID] mapping:leagueMapping];
+         for (NSString *summonerID in summonerIDs) {
+             [summonerIDAsKeyMapping addRelationshipMappingWithSourceKeyPath:summonerID mapping:leagueMapping];
          }
          
          return summonerIDAsKeyMapping;

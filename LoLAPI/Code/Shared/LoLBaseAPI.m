@@ -37,7 +37,20 @@
 
 - (NSString*)createPathToAPIRelativeToHostURL
 {
-    return [NSString stringWithFormat:@"%@/%@/v%@/%@", self.apiPath, self.selectedRegion.value, [_apiConfig.version getVersion], _apiConfig.name];
+    NSString *resultPath = @"";
+    
+    
+    if (self.apiPath.length && self.selectedRegion.value) {
+        resultPath = [NSString stringWithFormat:@"%@/%@/v%@/%@", self.apiPath, self.selectedRegion.value, [_apiConfig.version getVersion], _apiConfig.name];
+    }
+    
+    return resultPath;
+}
+
+
+- (NSString*)urlSafeRelativePathWithTrailingSlash
+{
+    return self.relativePathToBaseURL.length ? [NSString stringWithFormat:@"%@/", self.relativePathToBaseURL] : @"";
 }
 
 @end

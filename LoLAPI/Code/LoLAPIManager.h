@@ -14,6 +14,7 @@
 #import "LoLStatsAPI.h"
 #import "LoLSummonerAPI.h"
 #import "LoLTeamAPI.h"
+#import "LoLStatusAPI.h"
 
 
 @interface LoLAPIManager : NSObject
@@ -64,5 +65,10 @@
 // team api
 + (void)getTeamsForSummonersWithIDs:(NSArray*)summonerIDs success:(void(^)(NSDictionary *teams))successBlock failure:(void(^)(NSError *error))failureBlock;
 + (void)getTeamsForTeamsWithIDs:(NSArray*)teamIDs success:(void(^)(NSDictionary *teams))successBlock failure:(void(^)(NSError *error))failureBlock;
+
+// status api
++ (void)getShardsWithSuccess:(void(^)(NSArray *shards))successBlock failure:(void(^)(NSError *error))failureBlock;
++ (void)getShardStatusWithRegion:(LoLRegionID)region success:(void(^)(LoLShardStatus *shard))successBlock failure:(void(^)(NSError *error))failureBlock;
++ (void)getShardStatusForSelectedRegionWithSuccess:(void(^)(LoLShardStatus *shard))successBlock failure:(void(^)(NSError *error))failureBlock;
 
 @end

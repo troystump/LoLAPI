@@ -11,7 +11,7 @@
 
 @interface LoLStaticBlockItem : LoLBaseDTO
 
-@property (nonatomic, strong) NSNumber *count;
-@property (nonatomic, strong) NSNumber *id;
+@property (nonatomic, assign) NSInteger count;
+@property (nonatomic, assign) NSInteger id;
 
 @end

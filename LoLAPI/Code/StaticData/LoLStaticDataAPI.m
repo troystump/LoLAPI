@@ -312,7 +312,7 @@
 #pragma mark - Private Helpers
 
 // we needed to override this method since its full url path is slightly different from all of the other apis -__-
--(NSURL*) createURLToAPI
+- (NSURL*)createURLToAPI
 {
     return [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/%@/v%@", self.apiPath, self.apiConfig.name, self.selectedRegion.value, [self.apiConfig.version getVersion]] relativeToURL:self.hostURL];
 }
@@ -320,20 +320,17 @@
 
 - (void)setupDTOMappings
 {
-    RKObjectManager *sharedRestKitObjectManager = self.apiManager;
+    [self.apiManager addResponseDescriptorsFromArray:[self loadStaticChampionDTOMapping]];
+
+    [self.apiManager addResponseDescriptorsFromArray:[self loadStaticItemDTOMapping]];
     
+    [self.apiManager addResponseDescriptorsFromArray:[self loadStaticMasteryDTOMapping]];
     
-    [sharedRestKitObjectManager addResponseDescriptorsFromArray:[self loadStaticChampionDTOMapping]];
+    [self.apiManager addResponseDescriptor:[self loadStaticRealmDTOMapping]];
     
-    [sharedRestKitObjectManager addResponseDescriptorsFromArray:[self loadStaticItemDTOMapping]];
+    [self.apiManager addResponseDescriptorsFromArray:[self loadStaticRuneDTOMapping]];
     
-    [sharedRestKitObjectManager addResponseDescriptorsFromArray:[self loadStaticMasteryDTOMapping]];
-    
-    [sharedRestKitObjectManager addResponseDescriptor:[self loadStaticRealmDTOMapping]];
-    
-    [sharedRestKitObjectManager addResponseDescriptorsFromArray:[self loadStaticRuneDTOMapping]];
-    
-    [sharedRestKitObjectManager addResponseDescriptorsFromArray:[self loadStaticSpellDTOMapping]];
+    [self.apiManager addResponseDescriptorsFromArray:[self loadStaticSpellDTOMapping]];
 }
 
 
@@ -440,7 +437,7 @@
         
         
         for (NSString *championName in championNames) {
-            [championNameAsKeyMapping addRelationshipMappingWithSourceKeyPath:[NSString stringWithFormat:@"%@", championName] mapping:staticChampionMapping];
+            [championNameAsKeyMapping addRelationshipMappingWithSourceKeyPath:championName mapping:staticChampionMapping];
         }
         
         return championNameAsKeyMapping;
@@ -585,8 +582,8 @@
          RKObjectMapping *itemIDAsKeyMapping = [RKObjectMapping mappingForClass:[NSMutableDictionary class]];
          
          
-         for (NSNumber *itemID in itemIDs) {
-             [itemIDAsKeyMapping addRelationshipMappingWithSourceKeyPath:[NSString stringWithFormat:@"%@", itemID] mapping:staticItemMapping];
+         for (NSString *itemID in itemIDs) {
+             [itemIDAsKeyMapping addRelationshipMappingWithSourceKeyPath:itemID mapping:staticItemMapping];
          }
          
          return itemIDAsKeyMapping;
@@ -699,8 +696,8 @@
          RKObjectMapping *masteryIDAsKeyMapping = [RKObjectMapping mappingForClass:[NSMutableDictionary class]];
          
          
-         for (NSNumber *masteryID in masteryIDs) {
-             [masteryIDAsKeyMapping addRelationshipMappingWithSourceKeyPath:[NSString stringWithFormat:@"%@", masteryID] mapping:staticMasteryMapping];
+         for (NSString *masteryID in masteryIDs) {
+             [masteryIDAsKeyMapping addRelationshipMappingWithSourceKeyPath:masteryID mapping:staticMasteryMapping];
          }
          
          return masteryIDAsKeyMapping;
@@ -828,8 +825,8 @@
          RKObjectMapping *runeIDAsKeyMapping = [RKObjectMapping mappingForClass:[NSMutableDictionary class]];
          
          
-         for (NSNumber *runeID in runeIDs) {
-             [runeIDAsKeyMapping addRelationshipMappingWithSourceKeyPath:[NSString stringWithFormat:@"%@", runeID] mapping:staticRuneMapping];
+         for (NSString *runeID in runeIDs) {
+             [runeIDAsKeyMapping addRelationshipMappingWithSourceKeyPath:runeID mapping:staticRuneMapping];
          }
          
          return runeIDAsKeyMapping;
@@ -928,8 +925,8 @@
          RKObjectMapping *summonerSpellIDAsKeyMapping = [RKObjectMapping mappingForClass:[NSMutableDictionary class]];
          
          
-         for (NSNumber *summonerSpellID in summonerSpellIDs) {
-             [summonerSpellIDAsKeyMapping addRelationshipMappingWithSourceKeyPath:[NSString stringWithFormat:@"%@", summonerSpellID] mapping:staticSummonerSpellMapping];
+         for (NSString *summonerSpellID in summonerSpellIDs) {
+             [summonerSpellIDAsKeyMapping addRelationshipMappingWithSourceKeyPath:summonerSpellID mapping:staticSummonerSpellMapping];
          }
          
          return summonerSpellIDAsKeyMapping;

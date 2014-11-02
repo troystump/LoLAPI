@@ -27,7 +27,7 @@
 @property (nonatomic, strong) LoLStaticImage *image;
 @property (nonatomic, strong) NSString *key;
 @property (nonatomic, strong) LoLStaticLevelTip *leveltip;
-@property (nonatomic, strong) NSNumber *maxrank;
+@property (nonatomic, assign) NSInteger maxrank;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSObject *range; //object This field is either a List of Integer or the String 'self' for spells that target one's own champion.
 @property (nonatomic, strong) NSString *rangeBurn;

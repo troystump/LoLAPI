@@ -7,7 +7,6 @@
 //
 
 #import "LoLTeam.h"
-#import "LoLMatchHistorySummary.h"
 
 
 @implementation LoLTeam

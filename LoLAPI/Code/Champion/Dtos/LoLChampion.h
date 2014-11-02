@@ -17,7 +17,7 @@
 @property (nonatomic, assign) BOOL botEnabled;
 @property (nonatomic, assign) BOOL botMmEnabled;
 @property (nonatomic, assign) BOOL freeToPlay;
-@property (nonatomic, strong) NSNumber *id;
+@property (nonatomic, assign) NSInteger id;
 @property (nonatomic, assign) BOOL rankedPlayEnabled;
 
 

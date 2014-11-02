@@ -12,6 +12,6 @@
 @interface LoLRoster : LoLBaseDTO
 
 @property (nonatomic, strong) NSArray *memberList; // List[TeamMemberInfoDto]
-@property (nonatomic, strong) NSNumber *ownerId;
+@property (nonatomic, assign) NSInteger ownerId;
 
 @end

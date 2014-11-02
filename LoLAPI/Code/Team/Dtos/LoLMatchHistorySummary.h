@@ -11,15 +11,15 @@
 
 @interface LoLMatchHistorySummary : LoLBaseDTO
 
-@property (nonatomic, strong) NSNumber *assists;
-@property (nonatomic, strong) NSNumber *date;
-@property (nonatomic, strong) NSNumber *deaths;
-@property (nonatomic, strong) NSNumber *gameId;
+@property (nonatomic, assign) NSInteger assists;
+@property (nonatomic, strong) NSDate *date;
+@property (nonatomic, assign) NSInteger deaths;
+@property (nonatomic, assign) NSInteger gameId;
 @property (nonatomic, strong) NSString *gameMode;
 @property (nonatomic, assign) BOOL invalid;
-@property (nonatomic, strong) NSNumber *kills;
-@property (nonatomic, strong) NSNumber *mapId;
-@property (nonatomic, strong) NSNumber *opposingTeamKills;
+@property (nonatomic, assign) NSInteger kills;
+@property (nonatomic, assign) NSInteger mapId;
+@property (nonatomic, assign) NSInteger opposingTeamKills;
 @property (nonatomic, strong) NSString *opposingTeamName;
 @property (nonatomic, assign) BOOL win;
 

@@ -11,17 +11,15 @@
 #import "LoLBaseAPIPrivate.h"
 // dtos
 #import "LoLMatchHistorySummary.h"
-#import "LoLMessageOfDay.h"
 #import "LoLRoster.h"
 #import "LoLTeam.h"
 #import "LoLTeamMemberInfo.h"
 #import "LoLTeamStatDetail.h"
-#import "LoLTeamStatSummary.h"
 
 
 @implementation LoLTeamAPI
 
--(id) initWithConfig:(LoLAPIConfig*)apiConfig hostURL:(NSURL*)hostURL andPathToAPI:(NSString*)apiPath usingRegion:(LoLRegionID)selectedRegion
+- (id)initWithConfig:(LoLAPIConfig*)apiConfig hostURL:(NSURL*)hostURL andPathToAPI:(NSString*)apiPath usingRegion:(LoLRegionID)selectedRegion
 {
     if (self = [super initWithConfig:apiConfig hostURL:hostURL andPathToAPI:apiPath usingRegion:selectedRegion]) {
         [self setupDTOMappings];
@@ -82,20 +80,16 @@
 {
     RKObjectMapping *teamMapping;
     RKObjectMapping *matchHistorySummaryMapping;
-    RKObjectMapping *messageOfDayMapping;
     RKObjectMapping *rosterMapping;
-    RKObjectMapping *teamStatSummaryMapping;
     RKObjectMapping *teamMemberInfoMapping;
     RKObjectMapping *teamStatDetailMapping;
     NSMutableArray *teamPropertyNames = [LoLTeam getAllPropertyNames];
     NSMutableArray *rosterPropertyNames = [LoLRoster getAllPropertyNames];
-    NSMutableArray *teamStatSummaryPropertyNames = [LoLTeamStatSummary getAllPropertyNames];
     
     
     // remove any relationship mapping attributes to avoid "duplicate mapping" error
-    [teamPropertyNames removeObjectsInArray:@[@"matchHistory", @"messageOfDay", @"roster", @"teamStatSummary"]];
+    [teamPropertyNames removeObjectsInArray:@[@"matchHistory", @"roster", @"teamStatDetails"]];
     [rosterPropertyNames removeObject:@"memberList"];
-    [teamStatSummaryPropertyNames removeObject:@"teamStatDetails"];
     
     // create mapping for Team DTO
     teamMapping = [RKObjectMapping mappingForClass:[LoLTeam class]];
@@ -105,18 +99,10 @@
     matchHistorySummaryMapping = [RKObjectMapping mappingForClass:[LoLMatchHistorySummary class]];
     [matchHistorySummaryMapping addAttributeMappingsFromArray:[LoLMatchHistorySummary getAllPropertyNames]];
     
-    // create mapping for a MessageOfDay DTO
-    messageOfDayMapping = [RKObjectMapping mappingForClass:[LoLMessageOfDay class]];
-    [messageOfDayMapping addAttributeMappingsFromArray:[LoLMessageOfDay getAllPropertyNames]];
-    
     // create mapping for a Roster DTO
     rosterMapping = [RKObjectMapping mappingForClass:[LoLRoster class]];
     [rosterMapping addAttributeMappingsFromArray:rosterPropertyNames];
     
-    // create mapping for a TeamStatSummary DTO
-    teamStatSummaryMapping = [RKObjectMapping mappingForClass:[LoLTeamStatSummary class]];
-    [teamStatSummaryMapping addAttributeMappingsFromArray:teamStatSummaryPropertyNames];
-
     // create mapping for a TeamMemberInfo DTO
     teamMemberInfoMapping = [RKObjectMapping mappingForClass:[LoLTeamMemberInfo class]];
     [teamMemberInfoMapping addAttributeMappingsFromArray:[LoLTeamMemberInfo getAllPropertyNames]];
@@ -126,36 +112,28 @@
     [teamStatDetailMapping addAttributeMappingsFromArray:[LoLTeamStatDetail getAllPropertyNames]];
     
     // create relationship mapping to link the MatchHistorySummary DTO to the Team DTO
-    [teamMapping addRelationshipMappingWithSourceKeyPath: @"matchHistory" mapping:matchHistorySummaryMapping];
-    
-    // create relationship mapping to link the MessageOfDay DTO to the Team DTO
-    [teamMapping addRelationshipMappingWithSourceKeyPath: @"messageOfDay" mapping:messageOfDayMapping];
+    [teamMapping addRelationshipMappingWithSourceKeyPath:@"matchHistory" mapping:matchHistorySummaryMapping];
     
     // create relationship mapping to link the Roster DTO to the Team DTO
-    [teamMapping addRelationshipMappingWithSourceKeyPath: @"roster" mapping:rosterMapping];
+    [teamMapping addRelationshipMappingWithSourceKeyPath:@"roster" mapping:rosterMapping];
     
-    // create relationship mapping to link the TeamStatSummary DTO to the Team DTO
-    [teamMapping addRelationshipMappingWithSourceKeyPath: @"teamStatSummary" mapping:teamStatSummaryMapping];
+    // create relationship mapping to link the TeamStatDetailMapping DTO to the Team DTO
+    [teamMapping addRelationshipMappingWithSourceKeyPath:@"teamStatDetails" mapping:teamStatDetailMapping];
 
     // create relationship mapping to link the TeamMemberInfo DTO to the Roster DTO
-    [rosterMapping addRelationshipMappingWithSourceKeyPath: @"memberList" mapping:teamMemberInfoMapping];
-    
-    // create relationship mapping to link the TeamStatDetailMapping DTO to the TeamStatSummary DTO
-    [teamStatSummaryMapping addRelationshipMappingWithSourceKeyPath: @"teamStatDetails" mapping:teamStatDetailMapping];
+    [rosterMapping addRelationshipMappingWithSourceKeyPath:@"memberList" mapping:teamMemberInfoMapping];
     
     // LoL api uses the team IDs as keys into a dictionary of teams
     // since these keys are dynamic, we need to dynamically map each of these
     // team keys onto a team object.
     RKDynamicMapping* dynamicTeamMapping = [[RKDynamicMapping alloc] init];
-    [dynamicTeamMapping setObjectMappingForRepresentationBlock:^RKObjectMapping *(id representation)
-     {
+    [dynamicTeamMapping setObjectMappingForRepresentationBlock:^RKObjectMapping *(id representation) {
          NSArray* teamIDs = [representation allKeys];
          RKObjectMapping *teamIDAsKeyMapping = [RKObjectMapping mappingForClass:[NSMutableDictionary class]];
          
          
-         for (NSNumber *teamID in teamIDs)
-         {
-             [teamIDAsKeyMapping addRelationshipMappingWithSourceKeyPath:[NSString stringWithFormat:@"%@", teamID] mapping:teamMapping];
+         for (NSString *teamID in teamIDs) {
+             [teamIDAsKeyMapping addRelationshipMappingWithSourceKeyPath:teamID mapping:teamMapping];
          }
          
          return teamIDAsKeyMapping;

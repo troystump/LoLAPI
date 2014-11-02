@@ -11,25 +11,25 @@
 
 @interface LoLStaticStats : LoLBaseDTO
 
-@property (nonatomic, strong) NSNumber *armor;
-@property (nonatomic, strong) NSNumber *armorperlevel;
-@property (nonatomic, strong) NSNumber *attackdamage;
-@property (nonatomic, strong) NSNumber *attackdamageperlevel;
-@property (nonatomic, strong) NSNumber *attackrange;
-@property (nonatomic, strong) NSNumber *attackspeedoffset;
-@property (nonatomic, strong) NSNumber *attackspeedperlevel;
-@property (nonatomic, strong) NSNumber *crit;
-@property (nonatomic, strong) NSNumber *critperlevel;
-@property (nonatomic, strong) NSNumber *hp;
-@property (nonatomic, strong) NSNumber *hpperlevel;
-@property (nonatomic, strong) NSNumber *hpregen;
-@property (nonatomic, strong) NSNumber *hpregenperlevel;
-@property (nonatomic, strong) NSNumber *movespeed;
-@property (nonatomic, strong) NSNumber *mp;
-@property (nonatomic, strong) NSNumber *mpperlevel;
-@property (nonatomic, strong) NSNumber *mpregen;
-@property (nonatomic, strong) NSNumber *mpregenperlevel;
-@property (nonatomic, strong) NSNumber *spellblock;
-@property (nonatomic, strong) NSNumber *spellblockperlevel;
+@property (nonatomic, assign) double armor;
+@property (nonatomic, assign) double armorperlevel;
+@property (nonatomic, assign) double attackdamage;
+@property (nonatomic, assign) double attackdamageperlevel;
+@property (nonatomic, assign) double attackrange;
+@property (nonatomic, assign) double attackspeedoffset;
+@property (nonatomic, assign) double attackspeedperlevel;
+@property (nonatomic, assign) double crit;
+@property (nonatomic, assign) double critperlevel;
+@property (nonatomic, assign) double hp;
+@property (nonatomic, assign) double hpperlevel;
+@property (nonatomic, assign) double hpregen;
+@property (nonatomic, assign) double hpregenperlevel;
+@property (nonatomic, assign) double movespeed;
+@property (nonatomic, assign) double mp;
+@property (nonatomic, assign) double mpperlevel;
+@property (nonatomic, assign) double mpregen;
+@property (nonatomic, assign) double mpregenperlevel;
+@property (nonatomic, assign) double spellblock;
+@property (nonatomic, assign) double spellblockperlevel;
 
 @end

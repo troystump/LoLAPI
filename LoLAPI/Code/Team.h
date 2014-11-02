@@ -7,10 +7,8 @@
 //
 
 #import "LoLMatchHistorySummary.h"
-#import "LoLMessageOfDay.h"
 #import "LoLRoster.h"
 #import "LoLTeam.h"
 #import "LoLTeamMemberInfo.h"
 #import "LoLTeamStatDetail.h"
-#import "LoLTeamStatSummary.h"
 #import "LoLTeamAPI.h"

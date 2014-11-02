@@ -37,6 +37,10 @@
 #import "Team.h"
 #endif
 
+#if __has_include("Status.h")
+#import "Status.h"
+#endif
+
 #if __has_include("LoLAPIManager.h")
 #import "LoLAPIManager.h"
 #endif

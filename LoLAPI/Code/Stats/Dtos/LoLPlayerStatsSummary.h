@@ -13,9 +13,9 @@
 @interface LoLPlayerStatsSummary : LoLBaseDTO
 
 @property (nonatomic, strong) LoLAggregatedStats *aggregatedStats;
-@property (nonatomic, strong) NSNumber *losses;
-@property (nonatomic, strong) NSNumber *modifyDate;
+@property (nonatomic, assign) NSInteger losses;
+@property (nonatomic, strong) NSDate *modifyDate;
 @property (nonatomic, strong) NSString *playerStatSummaryType;
-@property (nonatomic, strong) NSNumber *wins;
+@property (nonatomic, assign) NSInteger wins;
 
 @end

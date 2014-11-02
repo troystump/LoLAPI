@@ -12,7 +12,7 @@
 
 @interface LoLRuneSlot : LoLBaseDTO
 
-@property (nonatomic, strong) NSNumber *runeId;
-@property (nonatomic, strong) NSNumber *runeSlotId;
+@property (nonatomic, assign) NSInteger runeId;
+@property (nonatomic, assign) NSInteger runeSlotId;
 
 @end

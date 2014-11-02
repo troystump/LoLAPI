@@ -12,10 +12,10 @@
 
 @interface LoLSummoner : LoLBaseDTO
 
-@property (nonatomic, strong) NSNumber *id;
+@property (nonatomic, assign) NSInteger id;
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSNumber *profileIconId;
-@property (nonatomic, strong) NSNumber *revisionDate; // summoner last modified
-@property (nonatomic, strong) NSNumber *summonerLevel;
+@property (nonatomic, assign) NSInteger profileIconId;
+@property (nonatomic, strong) NSDate *revisionDate; // summoner last modified
+@property (nonatomic, assign) NSInteger summonerLevel;
 
 @end

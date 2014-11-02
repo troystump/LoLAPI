@@ -17,12 +17,14 @@
 @property (nonatomic, strong) RKObjectManager *apiManager;
 @property (nonatomic, strong) NSURL *hostURL;
 @property (nonatomic, strong) NSString *apiPath;
-@property (nonatomic, strong)NSURL *url;
+@property (nonatomic, strong) NSURL *url;
 @property (nonatomic, readwrite) NSString *relativePathToBaseURL;
 @property (nonatomic, strong) LoLRegionInfo *selectedRegion;
 
 
 // methods
--(NSURL*) createURLToAPI;
+- (NSURL*)createURLToAPI;
+- (NSString*)urlSafeRelativePathWithTrailingSlash;
+
 
 @end

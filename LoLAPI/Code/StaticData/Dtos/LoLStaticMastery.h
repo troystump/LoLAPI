@@ -13,11 +13,11 @@
 @interface LoLStaticMastery : LoLBaseDTO
 
 @property (nonatomic, strong) NSArray *rawDescription; // List[string]
-@property (nonatomic, strong) NSNumber *id;
+@property (nonatomic, assign) NSInteger id;
 @property (nonatomic, strong) LoLStaticImage *image;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *prereq;
-@property (nonatomic, strong) NSNumber *ranks;
+@property (nonatomic, assign) NSInteger ranks;
 @property (nonatomic, strong) NSArray *sanitizedDescription; // List[string]
 
 @end

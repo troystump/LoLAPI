@@ -12,7 +12,7 @@
 
 @interface LoLRecentGames : LoLBaseDTO
 
-@property (nonatomic, strong) NSMutableArray *games;
-@property (nonatomic, strong) NSNumber *summonerId;
+@property (nonatomic, strong) NSArray *games; // Set[GameDto]
+@property (nonatomic, assign) NSInteger summonerId;
 
 @end

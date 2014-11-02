@@ -13,8 +13,8 @@
 @interface LoLRunePage : LoLBaseDTO
 
 @property (nonatomic, assign) BOOL current;
-@property (nonatomic, strong) NSNumber *id;
+@property (nonatomic, assign) NSInteger id;
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSArray *slots;
+@property (nonatomic, strong) NSArray *slots; // Set[RuneSlotDto]
 
 @end

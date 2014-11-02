@@ -11,7 +11,7 @@
 
 @interface LoLPlayerStatsSummaryList : LoLBaseDTO
 
-@property (nonatomic, strong) NSArray *playerStatSummaries; //list[PlayerStatsSummary]
-@property (nonatomic, strong) NSNumber *summonerId;
+@property (nonatomic, strong) NSArray *playerStatSummaries; // List[PlayerStatsSummary]
+@property (nonatomic, assign) NSInteger summonerId;
 
 @end

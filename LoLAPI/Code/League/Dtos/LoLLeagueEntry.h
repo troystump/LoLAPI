@@ -17,10 +17,10 @@
 @property (nonatomic, assign) BOOL isHotStreak;
 @property (nonatomic, assign) BOOL isInactive;
 @property (nonatomic, assign) BOOL isVeteran;
-@property (nonatomic, strong) NSNumber *leaguePoints;
+@property (nonatomic, assign) NSInteger leaguePoints;
 @property (nonatomic, strong) LoLMiniSeries *miniSeries;
 @property (nonatomic, strong) NSString *playerOrTeamId;
 @property (nonatomic, strong) NSString *playerOrTeamName;
-@property (nonatomic, strong) NSNumber *wins;
+@property (nonatomic, assign) NSInteger wins;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <RestKit/RestKit.h>
+#import "LoLMillisecondsSince1970ToDateValueTransformer.h"
 #import "LoLStatsAPI.h"
 #import "LoLBaseAPIPrivate.h"
 // dtos
@@ -47,7 +48,7 @@
 
 
 - (void)getStatsSummariesForSummonerWithID:(NSInteger)summonerID fromSeason:(LoLSeason)season usingAPIKey:(NSString*)apiKey success:(void(^)(LoLPlayerStatsSummaryList *statsSummaries))successBlock failure:(void(^)(NSError *error))failureBlock
-{
+{    
     void (^success)(RKObjectRequestOperation*, RKMappingResult*) = ^(RKObjectRequestOperation *operation, RKMappingResult *result) {
         successBlock([result firstObject]);
     };

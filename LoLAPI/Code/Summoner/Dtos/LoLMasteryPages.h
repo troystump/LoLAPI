@@ -12,7 +12,7 @@
 
 @interface LoLMasteryPages : LoLBaseDTO
 
-@property (nonatomic, strong) NSArray *pages;
-@property (nonatomic, strong) NSNumber *summonerId;
+@property (nonatomic, strong) NSArray *pages; // Set[MasteryPageDto]
+@property (nonatomic, assign) NSInteger summonerId;
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "LoLAPIManager.h"
+#import "RKValueTransformers.h"
+#import "LoLMillisecondsSince1970ToDateValueTransformer.h"
 
 
 @implementation LoLAPIManager
@@ -20,6 +22,7 @@ static LoLStaticDataAPI *_staticDataAPI;
 static LoLStatsAPI *_statsAPI;
 static LoLSummonerAPI *_summonerAPI;
 static LoLTeamAPI *_teamAPI;
+static LoLStatusAPI *_statusAPI;
 
 
 // don't call this explicitly from the client
@@ -67,6 +70,8 @@ static LoLTeamAPI *_teamAPI;
     
     
     dispatch_once(&once, ^{
+        [RKValueTransformer.defaultValueTransformer insertValueTransformer:[LoLMillisecondsSince1970ToDateValueTransformer millisecondsSince1970ToDateValueTransformer] atIndex:0];
+        
         sharedInstance = [[self alloc] init];
     });
     
@@ -99,7 +104,7 @@ static LoLTeamAPI *_teamAPI;
     
     _leagueAPI = [[LoLLeagueAPI alloc] initWithConfig:[[LoLAPIConfig alloc] initRouteToAPI:@"league"
                                                                            forMajorVersion:2
-                                                                           andMinorVersion:4
+                                                                           andMinorVersion:5
                                                                      withSupportForRegions:[LoLRegionHelper getRegions]]
                                               hostURL:[LoLRegionHelper hostURLWithRegionID:_region]
                                          andPathToAPI:pathToAPI
@@ -131,10 +136,18 @@ static LoLTeamAPI *_teamAPI;
     
     _teamAPI = [[LoLTeamAPI alloc] initWithConfig:[[LoLAPIConfig alloc] initRouteToAPI:@"team"
                                                                        forMajorVersion:2
-                                                                       andMinorVersion:3
+                                                                       andMinorVersion:4
                                                                  withSupportForRegions:[LoLRegionHelper getRegions]]
                                           hostURL:[LoLRegionHelper hostURLWithRegionID:_region]
                                      andPathToAPI:pathToAPI
+                                      usingRegion:_region];
+    
+    _statusAPI = [[LoLStatusAPI alloc] initWithConfig:[[LoLAPIConfig alloc] initRouteToAPI:@"status"
+                                                                       forMajorVersion:1
+                                                                       andMinorVersion:0
+                                                                 withSupportForRegions:nil]
+                                          hostURL:[NSURL URLWithString:@"http://status.leagueoflegends.com/"]
+                                     andPathToAPI:nil
                                       usingRegion:_region];
 }
 
@@ -330,7 +343,28 @@ static LoLTeamAPI *_teamAPI;
 
 + (void)getTeamsForTeamsWithIDs:(NSArray*)teamIDs success:(void(^)(NSDictionary *teams))successBlock failure:(void(^)(NSError *error))failureBlock
 {
-    [_teamAPI getTeamsForSummonersWithIDs:teamIDs usingAPIKey:_apiKey success:successBlock failure:failureBlock];
+    [_teamAPI getTeamsForTeamsWithIDs:teamIDs usingAPIKey:_apiKey success:successBlock failure:failureBlock];
+}
+
+
+
+#pragma mark - Status API
+
++ (void)getShardsWithSuccess:(void(^)(NSArray *shards))successBlock failure:(void(^)(NSError *error))failureBlock
+{
+    [_statusAPI getShardsWithSuccess:successBlock failure:failureBlock];
+}
+
+
++ (void)getShardStatusWithRegion:(LoLRegionID)region success:(void(^)(LoLShardStatus *shard))successBlock failure:(void(^)(NSError *error))failureBlock
+{
+    [_statusAPI getShardStatusWithRegion:region success:successBlock failure:failureBlock];
+}
+
+
++ (void)getShardStatusForSelectedRegionWithSuccess:(void(^)(LoLShardStatus *shard))successBlock failure:(void(^)(NSError *error))failureBlock
+{
+    [_statusAPI getShardStatusWithRegion:_region success:successBlock failure:failureBlock];
 }
 
 @end

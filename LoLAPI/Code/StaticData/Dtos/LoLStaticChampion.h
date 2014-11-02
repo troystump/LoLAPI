@@ -19,7 +19,7 @@
 @property (nonatomic, strong) NSArray *allytips; // List[string]
 @property (nonatomic, strong) NSString *blurb;
 @property (nonatomic, strong) NSArray *enemytips; // List[string]
-@property (nonatomic, strong) NSNumber *id;
+@property (nonatomic, assign) NSInteger id;
 @property (nonatomic, strong) LoLStaticImage *image;
 @property (nonatomic, strong) LoLStaticInfo *info;
 @property (nonatomic, strong) NSString *key;

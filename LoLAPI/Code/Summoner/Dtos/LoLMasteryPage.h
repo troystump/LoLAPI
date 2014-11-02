@@ -13,8 +13,8 @@
 @interface LoLMasteryPage : LoLBaseDTO
 
 @property (nonatomic, assign) BOOL current;
-@property (nonatomic, strong) NSNumber *id;
-@property (nonatomic, strong) NSArray *masteries;
+@property (nonatomic, assign) NSInteger id;
+@property (nonatomic, strong) NSArray *masteries; // List[MasteryDto]
 @property (nonatomic, strong) NSString *name;
 
 @end

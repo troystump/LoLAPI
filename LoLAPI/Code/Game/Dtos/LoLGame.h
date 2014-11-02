@@ -13,20 +13,20 @@
 
 @interface LoLGame : LoLBaseDTO
 
-@property (nonatomic, strong) NSNumber *championId;
-@property (nonatomic, strong) NSNumber *createDate;
-@property (nonatomic, strong) NSArray *fellowPlayers; // list of player models
-@property (nonatomic, strong) NSNumber *gameId;
+@property (nonatomic, assign) NSInteger championId;
+@property (nonatomic, strong) NSDate *createDate;
+@property (nonatomic, strong) NSArray *fellowPlayers; // List[PlayerDto]
+@property (nonatomic, assign) NSInteger gameId;
 @property (nonatomic, strong) NSString *gameMode;
 @property (nonatomic, strong) NSString *gameType;
 @property (nonatomic, assign) BOOL invalid;
-@property (nonatomic, strong) NSNumber *ipEarned;
-@property (nonatomic, strong) NSNumber *level;
-@property (nonatomic, strong) NSNumber *mapId;
-@property (nonatomic, strong) NSNumber *spell1;
-@property (nonatomic, strong) NSNumber *spell2;
+@property (nonatomic, assign) NSInteger ipEarned;
+@property (nonatomic, assign) NSInteger level;
+@property (nonatomic, assign) NSInteger mapId;
+@property (nonatomic, assign) NSInteger spell1;
+@property (nonatomic, assign) NSInteger spell2;
 @property (nonatomic, strong) LoLRawGameStats *stats;
 @property (nonatomic, strong) NSString *subType;
-@property (nonatomic, strong) NSNumber *teamId;
+@property (nonatomic, assign) NSInteger teamId;
 
 @end

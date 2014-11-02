@@ -11,9 +11,9 @@
 
 @interface LoLMiniSeries : LoLBaseDTO
 
-@property (nonatomic, strong) NSNumber *losses;
-@property (nonatomic, strong) NSArray *progress; // char array
-@property (nonatomic, strong) NSNumber *target;
-@property (nonatomic, strong) NSNumber *wins;
+@property (nonatomic, assign) NSInteger losses;
+@property (nonatomic, strong) NSString *progress; // String showing the current, sequential mini series progress where 'W' represents a win, 'L' represents a loss, and 'N' represents a game that hasn't been played yet.
+@property (nonatomic, assign) NSInteger target;
+@property (nonatomic, assign) NSInteger wins;
 
 @end

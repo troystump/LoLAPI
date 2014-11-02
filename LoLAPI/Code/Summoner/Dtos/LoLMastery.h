@@ -12,7 +12,7 @@
 
 @interface LoLMastery : LoLBaseDTO
 
-@property (nonatomic, strong) NSNumber *id;
-@property (nonatomic, strong) NSNumber *rank;
+@property (nonatomic, assign) NSInteger id;
+@property (nonatomic, assign) NSInteger rank;
 
 @end

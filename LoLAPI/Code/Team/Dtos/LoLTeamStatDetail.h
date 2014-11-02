@@ -11,10 +11,9 @@
 
 @interface LoLTeamStatDetail : LoLBaseDTO
 
-@property (nonatomic, strong) NSNumber *averageGamesPlayed;
-@property (nonatomic, strong) NSString *fullId;
-@property (nonatomic, strong) NSNumber *losses;
+@property (nonatomic, assign) NSInteger averageGamesPlayed;
+@property (nonatomic, assign) NSInteger losses;
 @property (nonatomic, strong) NSString *teamStatType;
-@property (nonatomic, strong) NSNumber *wins;
+@property (nonatomic, assign) NSInteger wins;
 
 @end

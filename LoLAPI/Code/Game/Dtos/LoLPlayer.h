@@ -12,8 +12,8 @@
 
 @interface LoLPlayer : LoLBaseDTO
 
-@property (nonatomic, strong) NSNumber *championId;
-@property (nonatomic, strong) NSNumber *summonerId;
-@property (nonatomic, strong) NSNumber *teamId;
+@property (nonatomic, assign) NSInteger championId;
+@property (nonatomic, assign) NSInteger summonerId;
+@property (nonatomic, assign) NSInteger teamId;
 
 @end

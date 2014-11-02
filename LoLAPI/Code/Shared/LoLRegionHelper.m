@@ -58,12 +58,11 @@ static NSDictionary *regions;
     
     [self initRegions];
     
-    for (NSNumber *regionID in regionIDs)
-        {
+    for (NSNumber *regionID in regionIDs) {
         tempRegion = [regions objectForKey:regionID];
         
         [resultDictionary setObject:tempRegion forKey:@(tempRegion.uid)];
-        }
+    }
     
     return resultDictionary;
 }

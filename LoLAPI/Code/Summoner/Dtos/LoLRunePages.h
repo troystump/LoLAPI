@@ -12,7 +12,7 @@
 
 @interface LoLRunePages : LoLBaseDTO
 
-@property (nonatomic, strong) NSArray *pages;
-@property (nonatomic, strong) NSNumber *summonerId;
+@property (nonatomic, strong) NSArray *pages; // Set[RunePageDto]
+@property (nonatomic, assign) NSInteger summonerId;
 
 @end

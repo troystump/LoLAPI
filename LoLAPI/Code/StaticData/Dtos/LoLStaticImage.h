@@ -13,10 +13,10 @@
 
 @property (nonatomic, strong) NSString *full;
 @property (nonatomic, strong) NSString *group;
-@property (nonatomic, strong) NSNumber *h;
+@property (nonatomic, assign) NSInteger h;
 @property (nonatomic, strong) NSString *sprite;
-@property (nonatomic, strong) NSNumber *w;
-@property (nonatomic, strong) NSNumber *x;
-@property (nonatomic, strong) NSNumber *y;
+@property (nonatomic, assign) NSInteger w;
+@property (nonatomic, assign) NSInteger x;
+@property (nonatomic, assign) NSInteger y;
 
 @end

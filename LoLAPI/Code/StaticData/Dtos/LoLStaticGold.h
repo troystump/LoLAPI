@@ -11,9 +11,9 @@
 
 @interface LoLStaticGold : LoLBaseDTO
 
-@property (nonatomic, strong) NSNumber *base;
+@property (nonatomic, assign) NSInteger base;
 @property (nonatomic, assign) BOOL purchasable;
-@property (nonatomic, strong) NSNumber *sell;
-@property (nonatomic, strong) NSNumber *total;
+@property (nonatomic, assign) NSInteger sell;
+@property (nonatomic, assign) NSInteger total;
 
 @end

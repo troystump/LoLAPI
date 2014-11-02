@@ -11,8 +11,8 @@
 
 @interface LoLStaticSkin : LoLBaseDTO
 
-@property (nonatomic, strong) NSNumber *id;
+@property (nonatomic, assign) NSInteger id;
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSNumber *num;
+@property (nonatomic, assign) NSInteger num;
 
 @end

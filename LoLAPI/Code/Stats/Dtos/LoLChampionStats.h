@@ -12,7 +12,7 @@
 
 @interface LoLChampionStats : LoLBaseDTO
 
-@property (nonatomic, strong) NSNumber *id;
+@property (nonatomic, assign) NSInteger id;
 @property (nonatomic, strong) LoLAggregatedStats *stats;
 
 @end

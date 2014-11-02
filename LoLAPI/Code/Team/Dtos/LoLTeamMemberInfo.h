@@ -13,7 +13,7 @@
 
 @property (nonatomic, strong) NSDate *inviteDate;
 @property (nonatomic, strong) NSDate *joinDate;
-@property (nonatomic, strong) NSNumber *playerId;
+@property (nonatomic, assign) NSInteger playerId;
 @property (nonatomic, strong) NSString *status;
 
 @end

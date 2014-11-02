@@ -159,9 +159,9 @@
          RKObjectMapping *summonerIDAsKeyMapping = [RKObjectMapping mappingForClass:[NSMutableDictionary class]];
          
          
-         for (NSNumber *summonerID in summonerIDs)
+         for (NSString *summonerID in summonerIDs)
          {
-             [summonerIDAsKeyMapping addRelationshipMappingWithSourceKeyPath:[NSString stringWithFormat:@"%@", summonerID] mapping:summonerMapping];
+             [summonerIDAsKeyMapping addRelationshipMappingWithSourceKeyPath:summonerID mapping:summonerMapping];
          }
          
          return summonerIDAsKeyMapping;
@@ -224,9 +224,9 @@
          RKObjectMapping *summonerIDAsKeyMapping = [RKObjectMapping mappingForClass:[NSMutableDictionary class]];
          
          
-         for (NSNumber *summonerID in summonerIDs)
+         for (NSString *summonerID in summonerIDs)
          {
-             [summonerIDAsKeyMapping addRelationshipMappingWithSourceKeyPath:[NSString stringWithFormat:@"%@", summonerID] mapping:masteryPagesMapping];
+             [summonerIDAsKeyMapping addRelationshipMappingWithSourceKeyPath:summonerID mapping:masteryPagesMapping];
          }
          
          return summonerIDAsKeyMapping;
@@ -285,9 +285,9 @@
          RKObjectMapping *summonerIDAsKeyMapping = [RKObjectMapping mappingForClass:[NSMutableDictionary class]];
          
          
-         for (NSNumber *summonerID in summonerIDs)
+         for (NSString *summonerID in summonerIDs)
          {
-             [summonerIDAsKeyMapping addRelationshipMappingWithSourceKeyPath:[NSString stringWithFormat:@"%@", summonerID] mapping:runePagesMapping];
+             [summonerIDAsKeyMapping addRelationshipMappingWithSourceKeyPath:summonerID mapping:runePagesMapping];
          }
          
          return summonerIDAsKeyMapping;

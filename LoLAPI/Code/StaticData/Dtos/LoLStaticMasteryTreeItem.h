@@ -11,7 +11,7 @@
 
 @interface LoLStaticMasteryTreeItem : LoLBaseDTO
 
-@property (nonatomic, strong) NSNumber *masteryId;
+@property (nonatomic, assign) NSInteger masteryId;
 @property (nonatomic, strong) NSString *prereq;
 
 @end
